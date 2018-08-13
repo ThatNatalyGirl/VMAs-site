@@ -26,7 +26,6 @@ body{
 
 header{
 	color: $primary-color;
-	width: 100%;
 	margin: 0 0 18px 2%;
 		
 	.logo{
@@ -73,59 +72,151 @@ header{
 		margin: 0 0 50px -2%;
 		line-height: .8em;
 		overflow: hidden;
-		width: 104%;
 	}
 
-	ul{
-		padding-top: 25px;
-		// display: flex;
+	.performer-imgs{
+		padding-top: 5%;
+		display: flex;
+		justify-content: space-around;
 
-		li{
-			div{
-			}
+		div{
+		}
 
-			.show-small{
-				width: 25%;
-				height: 0;
-				padding-bottom: 35%;
-			}
+		.show-small{
+			width: 25%;
+			height: 0;
+			padding-bottom: 35%;
+		}
 
-			.show-big{
-				width: 30%;
-				height: 0;
-				padding-bottom: 47%;
-				margin-top: -41%
-			}
+		.show-big{
+			width: 30%;
+			height: 0;
+			padding-bottom: 47%;
+			margin-top: -7%;
+			margin-left: -33%;
+		}
 
-			.shawn-mendez-small{
-				background: url(../img/shawn-small.png) top no-repeat;
-				background-size: 100%;
-			}
+		.shawn-mendez-small{
+			background: url(../img/shawn-small.png) top no-repeat;
+			background-size: 100%;
+			display: block;
+		}
 
-			.shawn-mendez-big{
-				background: url(../img/shawn-big.png) top no-repeat;
-				background-size: 100%;
-			}
+		.shawn-mendez-big{
+			background: url(../img/shawn-big.png) top no-repeat;
+			background-size: 100%;
+			display: block;
+		}
 
-			.ariana-grande-small{
-				background: url(../img/ariana-small.png) top no-repeat;
-				background-size: 100%;
-			}
+		.ariana-grande-small{
+			background: url(../img/ariana-small.png) top no-repeat;
+			background-size: 100%;
+			display: block;
+		}
 
-			.ariana-grande-big{
-				background: url(../img/ariana-big.png) top no-repeat;
-				background-size: 100%;
-			}
+		.ariana-grande-big{
+			background: url(../img/ariana-big.png) top no-repeat;
+			background-size: 100%;
+			display: block;
+		}
 
-			.logic-small{
-				background: url(../img/logic-small.png) top no-repeat;
-				background-size: 100%;
-			}
+		.logic-small{
+			background: url(../img/logic-small.png) top no-repeat;
+			background-size: 100%;
+			display: block;
+		}
 
-			.logic-big{
-				background: url(../img/logic-big.png) top no-repeat;
-				background-size: 100%;
-			}
+		.logic-big{
+			background: url(../img/logic-big.png) top no-repeat;
+			background-size: 100%;
+			display: block;
+		}
+
+		.travis-scott-small{
+			background: url(../img/travis-small.png) top no-repeat;
+			background-size: 100%;
+			display: none;
+		}
+
+		.travis-scott-big{
+			background: url(../img/travis-big.png) top no-repeat;
+			background-size: 100%;
+			display: none;
+		}
+
+		.post-malone-small{
+			background: url(../img/post-small.png) top no-repeat;
+			background-size: 100%;
+			display: none;
+		}
+
+		.post-malone-big{
+			background: url(../img/post-big.png) top no-repeat;
+			background-size: 100%;
+			display: none;
 		}		
 	}
 }
+
+h3{
+	font-family: $primary-font;
+	font-size: 2.1em;
+}
+
+.voting-sect{
+	h3{
+		color: $primary-color;
+	}
+
+	h3.vote-right{
+		color: $secondary-color;
+	}
+}
+
+.video-library-sect{
+	h3{
+		color: $secondary-color;
+	}
+}
+
+.photo-library-sect{
+	h3{
+		color: $primary-color;
+	}
+}
+
+footer{
+	background: $primary-color;
+	padding: 3% 3%;
+
+	ul{
+		display: flex;
+		justify-content: space-between;
+		padding-right: 30%;
+		padding-bottom: 3%;
+
+		a{
+			font-family: $secondary-font;
+			color: #fff;
+			font-size: 8px;
+			text-transform: uppercase;
+		}
+	}
+	
+	p{
+		font-family: $secondary-font;
+		color: #fff;
+		font-size: 7px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

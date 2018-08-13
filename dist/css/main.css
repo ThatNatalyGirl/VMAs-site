@@ -66,7 +66,6 @@ body {
 /* 2. Content ================================= */
 header {
 	color: #f70c0c;
-	width: 100%;
 	margin: 0 0 18px 2%;
 }
 
@@ -110,54 +109,132 @@ header .open-nav li {
 	margin: 0 0 50px -2%;
 	line-height: .8em;
 	overflow: hidden;
-	width: 104%;
 }
 
-.performers-sect ul {
-	padding-top: 25px;
+.performers-sect .performer-imgs {
+	padding-top: 5%;
+	display: flex;
+	justify-content: space-around;
 }
 
-.performers-sect ul li .show-small {
+.performers-sect .performer-imgs .show-small {
 	width: 25%;
 	height: 0;
 	padding-bottom: 35%;
 }
 
-.performers-sect ul li .show-big {
+.performers-sect .performer-imgs .show-big {
 	width: 30%;
 	height: 0;
 	padding-bottom: 47%;
-	margin-top: -41%;
+	margin-top: -7%;
+	margin-left: -33%;
 }
 
-.performers-sect ul li .shawn-mendez-small {
+.performers-sect .performer-imgs .shawn-mendez-small {
 	background: url(../img/shawn-small.png) top no-repeat;
 	background-size: 100%;
+	display: block;
 }
 
-.performers-sect ul li .shawn-mendez-big {
+.performers-sect .performer-imgs .shawn-mendez-big {
 	background: url(../img/shawn-big.png) top no-repeat;
 	background-size: 100%;
+	display: block;
 }
 
-.performers-sect ul li .ariana-grande-small {
+.performers-sect .performer-imgs .ariana-grande-small {
 	background: url(../img/ariana-small.png) top no-repeat;
 	background-size: 100%;
+	display: block;
 }
 
-.performers-sect ul li .ariana-grande-big {
+.performers-sect .performer-imgs .ariana-grande-big {
 	background: url(../img/ariana-big.png) top no-repeat;
 	background-size: 100%;
+	display: block;
 }
 
-.performers-sect ul li .logic-small {
+.performers-sect .performer-imgs .logic-small {
 	background: url(../img/logic-small.png) top no-repeat;
 	background-size: 100%;
+	display: block;
 }
 
-.performers-sect ul li .logic-big {
+.performers-sect .performer-imgs .logic-big {
 	background: url(../img/logic-big.png) top no-repeat;
 	background-size: 100%;
+	display: block;
+}
+
+.performers-sect .performer-imgs .travis-scott-small {
+	background: url(../img/travis-small.png) top no-repeat;
+	background-size: 100%;
+	display: none;
+}
+
+.performers-sect .performer-imgs .travis-scott-big {
+	background: url(../img/travis-big.png) top no-repeat;
+	background-size: 100%;
+	display: none;
+}
+
+.performers-sect .performer-imgs .post-malone-small {
+	background: url(../img/post-small.png) top no-repeat;
+	background-size: 100%;
+	display: none;
+}
+
+.performers-sect .performer-imgs .post-malone-big {
+	background: url(../img/post-big.png) top no-repeat;
+	background-size: 100%;
+	display: none;
+}
+
+h3 {
+	font-family: "octin-college", sans-serif;
+	font-size: 2.1em;
+}
+
+.voting-sect h3 {
+	color: #f70c0c;
+}
+
+.voting-sect h3.vote-right {
+	color: #0600ff;
+}
+
+.video-library-sect h3 {
+	color: #0600ff;
+}
+
+.photo-library-sect h3 {
+	color: #f70c0c;
+}
+
+footer {
+	background: #f70c0c;
+	padding: 3% 3%;
+}
+
+footer ul {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 30%;
+	padding-bottom: 3%;
+}
+
+footer ul a {
+	font-family: "Source Code Pro", monospace;
+	color: #fff;
+	font-size: 8px;
+	text-transform: uppercase;
+}
+
+footer p {
+	font-family: "Source Code Pro", monospace;
+	color: #fff;
+	font-size: 7px;
 }
 
 /*# sourceMappingURL=main.css.map */
