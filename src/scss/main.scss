@@ -1,104 +1,131 @@
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-
-TABLE OF CONTENTS:
-
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
 
 /* 0. Reset ================================= */
 @import 'reset';
+$primary-color: #f70c0c; //red
+$secondary-color: #0600ff; //blue
 
+$primary-font: "octin-college", sans-serif;
+$secondary-font: 'Source Code Pro', monospace;
 
 /* 1. Main Layout ================================= */
 
-* {
+*{
 	box-sizing: border-box;
 }
 
-body {
-	background: #ccc;
+body{
+	background: #fff;
+	width: 100%;
 	
 }
 
-
-
-
 /* 2. Content ================================= */
 
-.content {
-	position: relative;
-	font-family: sans-serif;
-	width: 90%;
-	max-width: 500px;
-	margin: 140px auto;
-	padding: 30px 20px 30px 30px;
-	.foreground {
-		position: relative;
-		z-index: 2;
-		transform: translateZ(100px);
-	}
-	.background {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		background: white;
-		z-index: 1;
-		// perspective: 2000px;
-		transition: 0.2s;
-		transform: translateX(20px) perspective(600px) rotateY(15deg);
-	}
-	&:hover .background {
-		transform: translateX(-30px) perspective(600px) rotateY(-15deg);		
-	}
-	.logo {
-		position: absolute;
-		top: -30px;
-		width: 60px;
-		z-index: 2;
-		transform: translateZ(100px);
-		transition: 0.3s;
+.wrapper{
+}
 
-		&:hover {
-			transform: rotate(-0.4turn)
-		}
-	}
-	h1 {
-		font-weight: 700;
-		font-size: 22pt;
-		margin: 15px 0;
-	}
-	p {
-		color: #777;
-		// margin: 10px 0;
-		line-height: 140%;
-	}
-	p.github {
-		font-size: 0.8em;
+header{
+	color: $primary-color;
+	width: 100%;
+	margin: 0 0 18px 2%;
 		
-		a {
-			opacity: 0.2;
-			transition: 0.3s;
-			&:hover {
-				opacity: 1;
-				color: red;
-			}
+	.logo{
+		margin-top: 15px;
+		display: flex;
+		width: 50%;
+		img{
+			width: 10%;
+			height: 10%;
+		}
+		h1{
+			font-family: $primary-font;
+			font-size: 2.3vw;
+			padding-left: 3%;
+			letter-spacing: 2px;
 		}
 	}
-	code {
+
+	.open-nav{
+		display: flex;
+		font-family: $secondary-font;
+		justify-content: space-between;
+		width: 35%;
+		margin-left: 8%;
+		margin-top: -2px;
+
+		li{
+			font-size: .6em;
+		} 
+	}
+}
+
+.section{
+
+}
+
+.performers-sect{
+	.performers-bg{
 		position: absolute;
-		top: 20px;
-		right: 20px;
-		font-size: 0.8em;
-		opacity: 0.2;
+		font-family: $primary-font;
+		color: $secondary-color;
+		opacity: .1;
+		font-size: 5.5em;
+		margin: 0 0 50px -2%;
+		line-height: .8em;
+		overflow: hidden;
+		width: 104%;
+	}
+
+	ul{
+		padding-top: 25px;
+		// display: flex;
+
+		li{
+			div{
+			}
+
+			.show-small{
+				width: 25%;
+				height: 0;
+				padding-bottom: 35%;
+			}
+
+			.show-big{
+				width: 30%;
+				height: 0;
+				padding-bottom: 47%;
+				margin-top: -41%
+			}
+
+			.shawn-mendez-small{
+				background: url(../img/shawn-small.png) top no-repeat;
+				background-size: 100%;
+			}
+
+			.shawn-mendez-big{
+				background: url(../img/shawn-big.png) top no-repeat;
+				background-size: 100%;
+			}
+
+			.ariana-grande-small{
+				background: url(../img/ariana-small.png) top no-repeat;
+				background-size: 100%;
+			}
+
+			.ariana-grande-big{
+				background: url(../img/ariana-big.png) top no-repeat;
+				background-size: 100%;
+			}
+
+			.logic-small{
+				background: url(../img/logic-small.png) top no-repeat;
+				background-size: 100%;
+			}
+
+			.logic-big{
+				background: url(../img/logic-big.png) top no-repeat;
+				background-size: 100%;
+			}
+		}		
 	}
 }
