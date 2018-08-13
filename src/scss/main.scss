@@ -19,6 +19,10 @@ body{
 	
 }
 
+a{
+	font-family: $secondary-font;
+}
+
 /* 2. Content ================================= */
 
 .wrapper{
@@ -58,8 +62,8 @@ header{
 	}
 }
 
-.section{
-
+section{
+	padding: 0 3%;
 }
 
 .performers-sect{
@@ -69,15 +73,14 @@ header{
 		color: $secondary-color;
 		opacity: .1;
 		font-size: 5.5em;
-		margin: 0 0 50px -2%;
 		line-height: .8em;
 		overflow: hidden;
 	}
 
 	.performer-imgs{
-		padding-top: 5%;
+		padding: 5% 0 5%;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 
 		div{
 		}
@@ -174,14 +177,25 @@ h3{
 }
 
 .video-library-sect{
+	width: 100%;
 	h3{
 		color: $secondary-color;
+	}
+
+	a{
+		font-size: .6em;
+		color: $primary-color;
 	}
 }
 
 .photo-library-sect{
 	h3{
 		color: $primary-color;
+	}
+
+	a{
+		font-size: .6em;
+		color: $secondary-color
 	}
 }
 
@@ -196,7 +210,6 @@ footer{
 		padding-bottom: 3%;
 
 		a{
-			font-family: $secondary-font;
 			color: #fff;
 			font-size: 8px;
 			text-transform: uppercase;

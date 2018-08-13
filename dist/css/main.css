@@ -63,6 +63,10 @@ body {
 	width: 100%;
 }
 
+a {
+	font-family: "Source Code Pro", monospace;
+}
+
 /* 2. Content ================================= */
 header {
 	color: #f70c0c;
@@ -100,21 +104,24 @@ header .open-nav li {
 	font-size: .6em;
 }
 
+section {
+	padding: 0 3%;
+}
+
 .performers-sect .performers-bg {
 	position: absolute;
 	font-family: "octin-college", sans-serif;
 	color: #0600ff;
 	opacity: .1;
 	font-size: 5.5em;
-	margin: 0 0 50px -2%;
 	line-height: .8em;
 	overflow: hidden;
 }
 
 .performers-sect .performer-imgs {
-	padding-top: 5%;
+	padding: 5% 0 5%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .performers-sect .performer-imgs .show-small {
@@ -204,12 +211,26 @@ h3 {
 	color: #0600ff;
 }
 
+.video-library-sect {
+	width: 100%;
+}
+
 .video-library-sect h3 {
 	color: #0600ff;
 }
 
+.video-library-sect a {
+	font-size: .6em;
+	color: #f70c0c;
+}
+
 .photo-library-sect h3 {
 	color: #f70c0c;
+}
+
+.photo-library-sect a {
+	font-size: .6em;
+	color: #0600ff;
 }
 
 footer {
@@ -225,7 +246,6 @@ footer ul {
 }
 
 footer ul a {
-	font-family: "Source Code Pro", monospace;
 	color: #fff;
 	font-size: 8px;
 	text-transform: uppercase;
