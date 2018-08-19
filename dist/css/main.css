@@ -109,31 +109,32 @@ section {
 }
 
 .performers-sect .performers-bg {
+	background: url(../img/perfomers-BG-type.png) no-repeat top;
+	background-size: 100%;
 	position: absolute;
-	font-family: "octin-college", sans-serif;
-	color: #0600ff;
-	opacity: .1;
-	font-size: 5.5em;
-	line-height: .8em;
-	overflow: hidden;
+	height: 0;
+	padding-bottom: 43%;
+	width: 100%;
+	z-index: -1;
+	margin: -1% 0% -1% -3%;
 }
 
 .performers-sect .performer-imgs {
-	padding: 5% 0 5%;
+	padding: 7% 0 0%;
 	display: flex;
 	justify-content: space-between;
 }
 
 .performers-sect .performer-imgs .show-small {
-	width: 25%;
+	width: 32%;
 	height: 0;
 	padding-bottom: 35%;
 }
 
 .performers-sect .performer-imgs .show-big {
-	width: 30%;
+	width: 40%;
 	height: 0;
-	padding-bottom: 47%;
+	padding-bottom: 52%;
 	margin-top: -7%;
 	margin-left: -33%;
 }
@@ -141,61 +142,51 @@ section {
 .performers-sect .performer-imgs .shawn-mendez-small {
 	background: url(../img/shawn-small.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
 .performers-sect .performer-imgs .shawn-mendez-big {
 	background: url(../img/shawn-big.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
 .performers-sect .performer-imgs .ariana-grande-small {
 	background: url(../img/ariana-small.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
 .performers-sect .performer-imgs .ariana-grande-big {
 	background: url(../img/ariana-big.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
 .performers-sect .performer-imgs .logic-small {
 	background: url(../img/logic-small.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
 .performers-sect .performer-imgs .logic-big {
 	background: url(../img/logic-big.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
 .performers-sect .performer-imgs .travis-scott-small {
 	background: url(../img/travis-small.png) top no-repeat;
 	background-size: 100%;
-	display: none;
 }
 
 .performers-sect .performer-imgs .travis-scott-big {
 	background: url(../img/travis-big.png) top no-repeat;
 	background-size: 100%;
-	display: none;
 }
 
 .performers-sect .performer-imgs .post-malone-small {
 	background: url(../img/post-small.png) top no-repeat;
 	background-size: 100%;
-	display: none;
 }
 
 .performers-sect .performer-imgs .post-malone-big {
 	background: url(../img/post-big.png) top no-repeat;
 	background-size: 100%;
-	display: none;
 }
 
 h3 {
@@ -203,16 +194,103 @@ h3 {
 	font-size: 2.1em;
 }
 
-.voting-sect h3 {
+.voting-sect .voting-bg {
+	background: url(../img/vid-background.png) no-repeat top;
+	background-size: 105%;
+	position: absolute;
+	height: 0;
+	padding-bottom: 38%;
+	margin-left: 8.5%;
+	width: 78%;
+	z-index: -1;
+}
+
+.voting-sect .vote-left {
+	padding-top: 4%;
+}
+
+.voting-sect .vote-left h3 {
 	color: #f70c0c;
 }
 
-.voting-sect h3.vote-right {
+.voting-sect video {
+	position: absolute;
+	background: transparent;
+}
+
+.voting-sect .vote-right {
+	padding-top: 4%;
+	float: right;
+}
+
+.voting-sect .vote-right h3 {
 	color: #0600ff;
+}
+
+.video-library-sect div, .photo-library-sect div {
+	display: flex;
+}
+
+.video-library-sect div figure, .photo-library-sect div figure {
+	transition: .5s;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 47%;
+	width: 100%;
+}
+
+.video-library-sect div figure:hover, .photo-library-sect div figure:hover {
+	filter: none;
+}
+
+.video-library-sect div figure figcaption, .photo-library-sect div figure figcaption {
+	background: rgba(255, 0, 0, 0.8);
+	color: #fff;
+	padding: 4%;
+	display: flex;
+	flex-direction: column;
+	font-family: "Source Code Pro", monospace;
+	margin-top: 104%;
+}
+
+.video-library-sect div figure figcaption h4, .photo-library-sect div figure figcaption h4 {
+	background: #0600ff;
+	width: 19%;
+	padding: 1% 4%;
+	font-size: 1.3vw;
+	transform: translateX(0%);
+	animation: ani-titles .5s;
+}
+
+.video-library-sect div figure figcaption h5, .photo-library-sect div figure figcaption h5 {
+	font-size: 1.7vw;
+	text-transform: uppercase;
+	padding: 5% 0;
+	transform: translateX(0%);
+	animation: ani-titles 1.5s;
+	animation-delay: .25s;
+}
+
+.video-library-sect div figure figcaption a, .photo-library-sect div figure figcaption a {
+	color: #0600ff;
+	text-align: right;
+	transform: translateX(0%);
+	animation: ani-titles 1.5s;
+	animation-delay: .75s;
+}
+
+@keyframes ani-titles {
+	0% {
+		transform: translateX(-105%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
 }
 
 .video-library-sect {
 	width: 100%;
+	padding-top: 28%;
 }
 
 .video-library-sect h3 {
@@ -220,8 +298,23 @@ h3 {
 }
 
 .video-library-sect a {
-	font-size: .6em;
+	font-size: .3em;
 	color: #f70c0c;
+}
+
+.video-library-sect div .justin-video-of-the-year {
+	background: url(../img/justin-video.jpg) top no-repeat;
+	background-size: cover;
+}
+
+.video-library-sect div .gaga-video-of-the-year {
+	background: url(../img/gaga-video.jpg) top no-repeat;
+	background-size: cover;
+}
+
+.video-library-sect div .fiona-video-of-the-year {
+	background: url(../img/fiona-video.jpg) top no-repeat;
+	background-size: cover;
 }
 
 .photo-library-sect h3 {
@@ -229,7 +322,7 @@ h3 {
 }
 
 .photo-library-sect a {
-	font-size: .6em;
+	font-size: .3em;
 	color: #0600ff;
 }
 
