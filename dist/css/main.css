@@ -100,8 +100,10 @@ header .open-nav {
 	margin-top: -2px;
 }
 
-header .open-nav li {
+header .open-nav a {
 	font-size: .6em;
+	text-decoration: none;
+	color: #f70c0c;
 }
 
 section {
@@ -199,14 +201,17 @@ h3 {
 	background-size: 105%;
 	position: absolute;
 	height: 0;
-	padding-bottom: 38%;
+	padding-bottom: 39%;
 	margin-left: 8.5%;
 	width: 78%;
-	z-index: -1;
+	z-index: -2;
 }
 
 .voting-sect .vote-left {
+	position: relative;
 	padding-top: 4%;
+	z-index: 2;
+	width: 35%;
 }
 
 .voting-sect .vote-left h3 {
@@ -214,13 +219,18 @@ h3 {
 }
 
 .voting-sect video {
-	position: absolute;
-	background: transparent;
+	position: relative;
+	width: 64%;
+	margin: -17% 19%;
+	z-index: 1;
 }
 
 .voting-sect .vote-right {
+	position: relative;
 	padding-top: 4%;
+	padding-right: 2%;
 	float: right;
+	z-index: 2;
 }
 
 .voting-sect .vote-right h3 {
