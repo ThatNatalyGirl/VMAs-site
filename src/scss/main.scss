@@ -193,12 +193,24 @@ h3{
 	}
 }
 
-.video-library-sect, .photo-library-sect{
+.video-library-sect{
+	width: 100%;
+	padding-top: 28%;
+
+	h3{
+		color: $secondary-color;
+	}
+
+	a{
+		font-size: .3em;
+		color: $primary-color;
+	}
+
 	div{
 		display: flex;
 
 		figure{
-			// filter: grayscale(100%);
+			filter: grayscale(100%);
 			transition: .5s;
 			overflow: hidden;
 			height: 0;
@@ -253,23 +265,7 @@ h3{
 				}	
 			}
 		}
-	}
-}
 
-.video-library-sect{
-	width: 100%;
-	padding-top: 28%;
-
-	h3{
-		color: $secondary-color;
-	}
-
-	a{
-		font-size: .3em;
-		color: $primary-color;
-	}
-
-	div{
 		.justin-video-of-the-year{
 			background: url(../img/justin-video.jpg) top no-repeat;
 			background-size: cover;
@@ -295,6 +291,149 @@ h3{
 	a{
 		font-size: .3em;
 		color: $secondary-color
+	}
+
+	div{
+		display: flex;
+		flex-wrap: wrap;
+
+		figure{
+			filter: grayscale(100%);
+			transition: .5s;
+			overflow: hidden;
+			height: 0;
+
+			&:hover{
+				filter: none;
+			}
+
+			figcaption{
+				background: rgba(255, 0, 0, .8);
+				color: #fff;
+				padding: 4%;
+				display: flex;
+				flex-direction: column;
+				font-family: $secondary-font;
+
+				h4{
+					background: $secondary-color;
+					width: 19%;
+					padding: 1% 4%;
+					font-size: 1.3vw;
+					transform: translateX(0%);
+					animation: ani-titles .5s;
+				}
+
+				h5{
+					font-size: 1.7vw;
+					text-transform: uppercase;
+					padding: 5% 0;
+					transform: translateX(0%);
+					animation: ani-titles 1.5s;
+					animation-delay: .25s;
+				}
+
+				a{
+					color: $secondary-color;
+					text-align: right;
+					transform: translateX(0%);
+					animation: ani-titles 1.5s;
+					animation-delay: .75s;
+				}
+
+				@keyframes ani-titles {
+					0% {
+						transform: translateX(-105%);
+					}
+					100% {
+						transform: translateX(0%);			}
+				}	
+			}
+		}
+	}
+
+	.jennifer-pics{
+		background: url(../img/photo-1.jpg) top no-repeat;
+		background-size: cover;
+		padding-bottom: 50%;
+		width: 31.61189358372457%; //404/1278
+
+		figcaption{
+			margin-top: 122%;
+		}
+	}
+
+	.column-two{
+		width: 35.9937402190923%; //460/1278
+		height: 0;
+
+		.beyonce-pics{
+			background: url(../img/photo-3.jpg) top no-repeat;
+			background-size: cover;
+			padding-bottom: 65%;
+			width: 100%;
+
+			figcaption{
+			margin-top: 30%;
+			}
+		}
+
+		.radio-city-pics{
+			background: url(../img/photo-4.jpg) bottom no-repeat;
+			background-size: cover;
+			padding-bottom: 50.5%;
+			width: 100%;
+
+			figcaption{
+				margin-top: 15%;
+			}
+		}
+	}
+
+	.miley-pics{
+		background: url(../img/photo-6.jpg) top no-repeat;
+		background-size: cover;
+		padding-bottom: 41.5%;
+		width: 32.3943661971831%; //414/1278
+
+		figcaption{
+			margin-top: 91%;
+		}	
+	}
+
+	.hotties-pics{
+		background: url(../img/photo-9.jpg) top no-repeat;
+		background-size: 100%;
+		padding-bottom: 35%;
+		width: 31.61189358372457%; //404/1278
+		
+		figcaption{
+			margin-top: 58%;
+		}
+	}
+
+	.t-swift-pics{
+		background: url(../img/photo-2.jpg) top no-repeat;
+		background-size: cover;
+		padding-bottom: 38.7%;
+		width: 21.0485133020344%; //269/1278
+		margin-top: -8.5%;
+
+		figcaption{
+			margin-top: 128%;
+		}
+	}
+
+	.logic-pics{
+		background: url(../img/photo-7.jpg) top no-repeat;
+		background-size: cover;
+		padding-bottom: 38.7%;
+		width: 47.339593114241%; //605/1278
+		margin-top: -8.5%;
+
+		figcaption{
+			margin-top: 51%;
+		}
 	}
 }
 

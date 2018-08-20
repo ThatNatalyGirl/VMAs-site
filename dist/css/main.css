@@ -227,11 +227,26 @@ h3 {
 	color: #0600ff;
 }
 
-.video-library-sect div, .photo-library-sect div {
+.video-library-sect {
+	width: 100%;
+	padding-top: 28%;
+}
+
+.video-library-sect h3 {
+	color: #0600ff;
+}
+
+.video-library-sect a {
+	font-size: .3em;
+	color: #f70c0c;
+}
+
+.video-library-sect div {
 	display: flex;
 }
 
-.video-library-sect div figure, .photo-library-sect div figure {
+.video-library-sect div figure {
+	filter: grayscale(100%);
 	transition: .5s;
 	overflow: hidden;
 	height: 0;
@@ -239,11 +254,11 @@ h3 {
 	width: 100%;
 }
 
-.video-library-sect div figure:hover, .photo-library-sect div figure:hover {
+.video-library-sect div figure:hover {
 	filter: none;
 }
 
-.video-library-sect div figure figcaption, .photo-library-sect div figure figcaption {
+.video-library-sect div figure figcaption {
 	background: rgba(255, 0, 0, 0.8);
 	color: #fff;
 	padding: 4%;
@@ -253,7 +268,7 @@ h3 {
 	margin-top: 104%;
 }
 
-.video-library-sect div figure figcaption h4, .photo-library-sect div figure figcaption h4 {
+.video-library-sect div figure figcaption h4 {
 	background: #0600ff;
 	width: 19%;
 	padding: 1% 4%;
@@ -262,7 +277,7 @@ h3 {
 	animation: ani-titles .5s;
 }
 
-.video-library-sect div figure figcaption h5, .photo-library-sect div figure figcaption h5 {
+.video-library-sect div figure figcaption h5 {
 	font-size: 1.7vw;
 	text-transform: uppercase;
 	padding: 5% 0;
@@ -271,7 +286,7 @@ h3 {
 	animation-delay: .25s;
 }
 
-.video-library-sect div figure figcaption a, .photo-library-sect div figure figcaption a {
+.video-library-sect div figure figcaption a {
 	color: #0600ff;
 	text-align: right;
 	transform: translateX(0%);
@@ -286,20 +301,6 @@ h3 {
 	100% {
 		transform: translateX(0%);
 	}
-}
-
-.video-library-sect {
-	width: 100%;
-	padding-top: 28%;
-}
-
-.video-library-sect h3 {
-	color: #0600ff;
-}
-
-.video-library-sect a {
-	font-size: .3em;
-	color: #f70c0c;
 }
 
 .video-library-sect div .justin-video-of-the-year {
@@ -324,6 +325,150 @@ h3 {
 .photo-library-sect a {
 	font-size: .3em;
 	color: #0600ff;
+}
+
+.photo-library-sect div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.photo-library-sect div figure {
+	filter: grayscale(100%);
+	transition: .5s;
+	overflow: hidden;
+	height: 0;
+}
+
+.photo-library-sect div figure:hover {
+	filter: none;
+}
+
+.photo-library-sect div figure figcaption {
+	background: rgba(255, 0, 0, 0.8);
+	color: #fff;
+	padding: 4%;
+	display: flex;
+	flex-direction: column;
+	font-family: "Source Code Pro", monospace;
+}
+
+.photo-library-sect div figure figcaption h4 {
+	background: #0600ff;
+	width: 19%;
+	padding: 1% 4%;
+	font-size: 1.3vw;
+	transform: translateX(0%);
+	animation: ani-titles .5s;
+}
+
+.photo-library-sect div figure figcaption h5 {
+	font-size: 1.7vw;
+	text-transform: uppercase;
+	padding: 5% 0;
+	transform: translateX(0%);
+	animation: ani-titles 1.5s;
+	animation-delay: .25s;
+}
+
+.photo-library-sect div figure figcaption a {
+	color: #0600ff;
+	text-align: right;
+	transform: translateX(0%);
+	animation: ani-titles 1.5s;
+	animation-delay: .75s;
+}
+
+@keyframes ani-titles {
+	0% {
+		transform: translateX(-105%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.photo-library-sect .jennifer-pics {
+	background: url(../img/photo-1.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 50%;
+	width: 31.61189358372457%;
+}
+
+.photo-library-sect .jennifer-pics figcaption {
+	margin-top: 122%;
+}
+
+.photo-library-sect .column-two {
+	width: 35.9937402190923%;
+	height: 0;
+}
+
+.photo-library-sect .column-two .beyonce-pics {
+	background: url(../img/photo-3.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 65%;
+	width: 100%;
+}
+
+.photo-library-sect .column-two .beyonce-pics figcaption {
+	margin-top: 30%;
+}
+
+.photo-library-sect .column-two .radio-city-pics {
+	background: url(../img/photo-4.jpg) bottom no-repeat;
+	background-size: cover;
+	padding-bottom: 50.5%;
+	width: 100%;
+}
+
+.photo-library-sect .column-two .radio-city-pics figcaption {
+	margin-top: 15%;
+}
+
+.photo-library-sect .miley-pics {
+	background: url(../img/photo-6.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 41.5%;
+	width: 32.3943661971831%;
+}
+
+.photo-library-sect .miley-pics figcaption {
+	margin-top: 91%;
+}
+
+.photo-library-sect .hotties-pics {
+	background: url(../img/photo-9.jpg) top no-repeat;
+	background-size: 100%;
+	padding-bottom: 35%;
+	width: 31.61189358372457%;
+}
+
+.photo-library-sect .hotties-pics figcaption {
+	margin-top: 58%;
+}
+
+.photo-library-sect .t-swift-pics {
+	background: url(../img/photo-2.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 38.7%;
+	width: 21.0485133020344%;
+	margin-top: -8.5%;
+}
+
+.photo-library-sect .t-swift-pics figcaption {
+	margin-top: 128%;
+}
+
+.photo-library-sect .logic-pics {
+	background: url(../img/photo-7.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 38.7%;
+	width: 47.339593114241%;
+	margin-top: -8.5%;
+}
+
+.photo-library-sect .logic-pics figcaption {
+	margin-top: 51%;
 }
 
 footer {
