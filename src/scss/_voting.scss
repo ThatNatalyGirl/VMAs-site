@@ -1,0 +1,32 @@
+$primary-color: #f70c0c; //red
+$secondary-color: #0600ff; //blue
+
+$primary-font: "octin-college", sans-serif;
+$secondary-font: 'Source Code Pro', monospace;
+
+
+
+// ============Category Buttons=========
+
+.category-buttons {
+	ul {
+		display: flex;
+
+		li {
+			padding: 10px;
+			text-align: center;
+			height: 5vh;
+			background: $secondary-color;
+
+			a {
+				text-decoration: none;
+				font-family: $secondary-font;
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+
+.sub-category {
+}

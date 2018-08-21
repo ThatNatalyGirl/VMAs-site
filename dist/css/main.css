@@ -53,6 +53,23 @@ table {
 	border-spacing: 0;
 }
 
+.category-buttons ul {
+	display: flex;
+}
+
+.category-buttons ul li {
+	padding: 10px;
+	text-align: center;
+	height: 5vh;
+	background: #0600ff;
+}
+
+.category-buttons ul li a {
+	text-decoration: none;
+	font-family: "Source Code Pro", monospace;
+	color: #f70c0c;
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
