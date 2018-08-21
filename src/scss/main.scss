@@ -27,9 +27,6 @@ a{
 
 /* 2. Content ================================= */
 
-.wrapper{
-}
-
 header{
 	color: $primary-color;
 	margin: 0 0 18px 2%;
@@ -86,7 +83,7 @@ header{
 	}
 }
 
-section{
+.home section{
 	padding: 0 3%;
 }
 
@@ -190,7 +187,7 @@ section{
 	}
 }
 
-h3{
+.home h3{
 	font-family: $primary-font;
 	font-size: 1.4em;
 
