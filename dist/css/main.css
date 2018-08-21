@@ -234,13 +234,13 @@ header .open-nav a:hover {
 	padding: 0 3%;
 }
 
-.performers-sect {
+.home .performers-sect {
 	padding: 0%;
 	width: 97vw;
 	overflow: hidden;
 }
 
-.performers-sect .performers-bg {
+.home .performers-sect .performers-bg {
 	background: url(../img/perfomers-BG-type.png) no-repeat top;
 	background-size: 100%;
 	position: absolute;
@@ -251,25 +251,25 @@ header .open-nav a:hover {
 	margin: -1% 0%;
 }
 
-.performers-sect .performer-imgs {
+.home .performers-sect .performer-imgs {
 	display: flex;
 	justify-content: space-between;
 	width: 160%;
 	margin-bottom: 1%;
 }
 
-.performers-sect .performer-imgs .performer {
+.home .performers-sect .performer-imgs .performer {
 	width: 100%;
 	margin: 3% 1%;
 }
 
-.performers-sect .performer-imgs .performer .show-small {
+.home .performers-sect .performer-imgs .performer .show-small {
 	width: 100%;
 	height: 0;
 	padding-bottom: 128%;
 }
 
-.performers-sect .performer-imgs .performer .show-big {
+.home .performers-sect .performer-imgs .performer .show-big {
 	width: 131%;
 	height: 0;
 	padding-bottom: 165%;
@@ -277,52 +277,52 @@ header .open-nav a:hover {
 	margin-left: -15%;
 }
 
-.performers-sect .performer-imgs .performer .shawn-mendez-small {
+.home .performers-sect .performer-imgs .performer .shawn-mendez-small {
 	background: url(../img/shawn-small.png) top no-repeat;
 	background-size: 100%;
 }
 
-.performers-sect .performer-imgs .performer .shawn-mendez-big {
+.home .performers-sect .performer-imgs .performer .shawn-mendez-big {
 	background: url(../img/shawn-big.png) top no-repeat;
 	background-size: 100%;
 }
 
-.performers-sect .performer-imgs .performer .ariana-grande-small {
+.home .performers-sect .performer-imgs .performer .ariana-grande-small {
 	background: url(../img/ariana-small.png) top no-repeat;
 	background-size: 100%;
 }
 
-.performers-sect .performer-imgs .performer .ariana-grande-big {
+.home .performers-sect .performer-imgs .performer .ariana-grande-big {
 	background: url(../img/ariana-big.png) top no-repeat;
 	background-size: 100%;
 }
 
-.performers-sect .performer-imgs .performer .logic-small {
+.home .performers-sect .performer-imgs .performer .logic-small {
 	background: url(../img/logic-small.png) top no-repeat;
 	background-size: 100%;
 }
 
-.performers-sect .performer-imgs .performer .logic-big {
+.home .performers-sect .performer-imgs .performer .logic-big {
 	background: url(../img/logic-big.png) top no-repeat;
 	background-size: 100%;
 }
 
-.performers-sect .performer-imgs .performer .travis-scott-small {
+.home .performers-sect .performer-imgs .performer .travis-scott-small {
 	background: url(../img/travis-small.png) top no-repeat;
 	background-size: 100%;
 }
 
-.performers-sect .performer-imgs .performer .travis-scott-big {
+.home .performers-sect .performer-imgs .performer .travis-scott-big {
 	background: url(../img/travis-big.png) top no-repeat;
 	background-size: 100%;
 }
 
-.performers-sect .performer-imgs .performer .post-malone-small {
+.home .performers-sect .performer-imgs .performer .post-malone-small {
 	background: url(../img/post-small.png) top no-repeat;
 	background-size: 100%;
 }
 
-.performers-sect .performer-imgs .performer .post-malone-big {
+.home .performers-sect .performer-imgs .performer .post-malone-big {
 	background: url(../img/post-big.png) top no-repeat;
 	background-size: 100%;
 }
@@ -338,7 +338,7 @@ header .open-nav a:hover {
 	}
 }
 
-.voting-sect .voting-bg {
+.home .voting-sect .voting-bg {
 	background: url(../img/vid-background.png) no-repeat top;
 	background-size: 105%;
 	position: absolute;
@@ -349,29 +349,29 @@ header .open-nav a:hover {
 	z-index: -2;
 }
 
-.voting-sect .vote-left {
+.home .voting-sect .vote-left {
 	position: relative;
 	padding-top: 4%;
 	z-index: 2;
 	width: 41%;
 }
 
-.voting-sect .vote-left h3 {
+.home .voting-sect .vote-left h3 {
 	color: #f70c0c;
 }
 
-.voting-sect .vote-left h3:nth-child(1) {
+.home .voting-sect .vote-left h3:nth-child(1) {
 	opacity: 0;
 	animation: ani-voting 2s infinite;
 }
 
-.voting-sect .vote-left h3:nth-child(2) {
+.home .voting-sect .vote-left h3:nth-child(2) {
 	opacity: 0;
 	animation: ani-voting 2s infinite;
 	animation-delay: .5s;
 }
 
-.voting-sect .vote-left h3:nth-child(3) {
+.home .voting-sect .vote-left h3:nth-child(3) {
 	opacity: 0;
 	animation: ani-voting 2s infinite;
 	animation-delay: 1s;
@@ -392,14 +392,14 @@ header .open-nav a:hover {
 	}
 }
 
-.voting-sect video {
+.home .voting-sect video {
 	position: absolute;
 	width: 64%;
 	margin: -15% 16%;
 	z-index: 1;
 }
 
-.voting-sect .vote-right {
+.home .voting-sect .vote-right {
 	position: relative;
 	padding-top: 4%;
 	padding-right: 2%;
@@ -407,49 +407,49 @@ header .open-nav a:hover {
 	z-index: 2;
 }
 
-.voting-sect .vote-right h3 {
+.home .voting-sect .vote-right h3 {
 	color: #0600ff;
 }
 
-.voting-sect .vote-right h3:nth-child(1) {
+.home .voting-sect .vote-right h3:nth-child(1) {
 	opacity: 0;
 	animation: ani-voting 2s infinite;
 	animation-delay: .5s;
 }
 
-.voting-sect .vote-right h3:nth-child(2) {
+.home .voting-sect .vote-right h3:nth-child(2) {
 	opacity: 0;
 	animation: ani-voting 2s infinite;
 	animation-delay: 1s;
 }
 
-.voting-sect .vote-right h3:nth-child(3) {
+.home .voting-sect .vote-right h3:nth-child(3) {
 	opacity: 0;
 	animation: ani-voting 2s infinite;
 	animation-delay: 1.5s;
 }
 
-.video-library-sect {
+.home .video-library-sect {
 	width: 100%;
 	padding-top: 28%;
 }
 
-.video-library-sect h3 {
+.home .video-library-sect h3 {
 	color: #0600ff;
 	margin-bottom: 4%;
 }
 
-.video-library-sect a {
+.home .video-library-sect a {
 	font-size: .3em;
 	color: #f70c0c;
 	padding-left: 3%;
 }
 
-.video-library-sect div {
+.home .video-library-sect div {
 	display: flex;
 }
 
-.video-library-sect div figure {
+.home .video-library-sect div figure {
 	filter: grayscale(100%);
 	transition: .5s;
 	overflow: hidden;
@@ -458,11 +458,11 @@ header .open-nav a:hover {
 	width: 100%;
 }
 
-.video-library-sect div figure:hover {
+.home .video-library-sect div figure:hover {
 	filter: none;
 }
 
-.video-library-sect div figure figcaption {
+.home .video-library-sect div figure figcaption {
 	background: rgba(255, 0, 0, 0.8);
 	color: #fff;
 	padding: 4% 4% 10% 4%;
@@ -475,7 +475,7 @@ header .open-nav a:hover {
 	opacity: 0;
 }
 
-.video-library-sect div figure figcaption h4 {
+.home .video-library-sect div figure figcaption h4 {
 	background: #0600ff;
 	width: 19%;
 	padding: 1% 4%;
@@ -484,7 +484,7 @@ header .open-nav a:hover {
 	animation: ani-titles .5s;
 }
 
-.video-library-sect div figure figcaption h5 {
+.home .video-library-sect div figure figcaption h5 {
 	font-size: 1.7vw;
 	text-transform: uppercase;
 	padding: 5% 0;
@@ -492,7 +492,7 @@ header .open-nav a:hover {
 	animation: ani-titles .5s;
 }
 
-.video-library-sect div figure figcaption a {
+.home .video-library-sect div figure figcaption a {
 	color: #0600ff;
 	float: right;
 	transform: translateX(0%);
@@ -508,17 +508,17 @@ header .open-nav a:hover {
 	}
 }
 
-.video-library-sect div .justin-video-of-the-year {
+.home .video-library-sect div .justin-video-of-the-year {
 	background: url(../img/justin-video.jpg) top no-repeat;
 	background-size: cover;
 }
 
-.video-library-sect div .gaga-video-of-the-year {
+.home .video-library-sect div .gaga-video-of-the-year {
 	background: url(../img/gaga-video.jpg) top no-repeat;
 	background-size: cover;
 }
 
-.video-library-sect div .fiona-video-of-the-year {
+.home .video-library-sect div .fiona-video-of-the-year {
 	background: url(../img/fiona-video.jpg) top no-repeat;
 	background-size: cover;
 }
