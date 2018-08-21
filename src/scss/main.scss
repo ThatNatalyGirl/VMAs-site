@@ -157,7 +157,11 @@ section{
 
 h3{
 	font-family: $primary-font;
-	font-size: 2.1em;
+	font-size: 1.4em;
+
+	@media screen and (min-width: 692px){
+		font-size: 2.1em;
+	}
 }
 
 .voting-sect{
@@ -176,7 +180,7 @@ h3{
 		position: relative;
 		padding-top: 4%;
 		z-index: 2;
-		width: 35%;
+		width: 41%;
 
 		h3{
 			color: $primary-color;
@@ -184,9 +188,9 @@ h3{
 	}
 
 	video{
-		position: relative;
+		position: absolute;
 		width: 64%;
-		margin: -17% 19%;
+		margin: -15% 16%;
 		z-index: 1;
 	}
 
@@ -209,11 +213,14 @@ h3{
 
 	h3{
 		color: $secondary-color;
+		margin-bottom: 4%;
 	}
 
 	a{
 		font-size: .3em;
 		color: $primary-color;
+		padding-left: 3%;
+		// margin-top-top: 2px;
 	}
 
 	div{
@@ -234,11 +241,14 @@ h3{
 			figcaption{
 				background: rgba(255, 0, 0, .8);
 				color: #fff;
-				padding: 4%;
+				padding: 4% 4% 10% 4%;
 				display: flex;
 				flex-direction: column;
 				font-family: $secondary-font;
-				margin-top: 104%;
+				margin-top: 102%;
+				display: none;
+				transition: .5s;
+				opacity: 0;
 
 				h4{
 					background: $secondary-color;
@@ -254,16 +264,16 @@ h3{
 					text-transform: uppercase;
 					padding: 5% 0;
 					transform: translateX(0%);
-					animation: ani-titles 1.5s;
-					animation-delay: .25s;
+					animation: ani-titles .5s;
+					// animation-delay: .25s;
 				}
 
 				a{
 					color: $secondary-color;
-					text-align: right;
+					float: right;
 					transform: translateX(0%);
-					animation: ani-titles 1.5s;
-					animation-delay: .75s;
+					animation: ani-titles .5s;
+					// animation-delay: .75s;
 				}
 
 				@keyframes ani-titles {
@@ -296,11 +306,14 @@ h3{
 .photo-library-sect{
 	h3{
 		color: $primary-color;
+		margin-bottom: 4%;
+		margin-top: 7%;
 	}
 
 	a{
 		font-size: .3em;
-		color: $secondary-color
+		color: $secondary-color;
+		padding-left: 3%;
 	}
 
 	div{
@@ -320,10 +333,13 @@ h3{
 			figcaption{
 				background: rgba(255, 0, 0, .8);
 				color: #fff;
-				padding: 4%;
+				padding: 4% 4% 20% 4%;
 				display: flex;
 				flex-direction: column;
 				font-family: $secondary-font;
+				display: none;
+				transition: .5s;
+				opacity: 0;
 
 				h4{
 					background: $secondary-color;
@@ -339,16 +355,16 @@ h3{
 					text-transform: uppercase;
 					padding: 5% 0;
 					transform: translateX(0%);
-					animation: ani-titles 1.5s;
-					animation-delay: .25s;
+					animation: ani-titles .5s;
+					// animation-delay: .25s;
 				}
 
 				a{
 					color: $secondary-color;
-					text-align: right;
+					float: right;
 					transform: translateX(0%);
-					animation: ani-titles 1.5s;
-					animation-delay: .75s;
+					animation: ani-titles .5s;
+					// animation-delay: .75s;
 				}
 
 				@keyframes ani-titles {
@@ -413,8 +429,8 @@ h3{
 
 	.hotties-pics{
 		background: url(../img/photo-9.jpg) top no-repeat;
-		background-size: 100%;
-		padding-bottom: 35%;
+		background-size: cover;
+		padding-bottom: 30.2%;
 		width: 31.61189358372457%; //404/1278
 		
 		figcaption{
@@ -450,6 +466,7 @@ h3{
 footer{
 	background: $primary-color;
 	padding: 3% 3%;
+	margin-top: 4%;
 
 	ul{
 		display: flex;

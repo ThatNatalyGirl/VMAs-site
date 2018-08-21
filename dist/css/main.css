@@ -193,7 +193,13 @@ section {
 
 h3 {
 	font-family: "octin-college", sans-serif;
-	font-size: 2.1em;
+	font-size: 1.4em;
+}
+
+@media screen and (min-width: 692px) {
+	h3 {
+		font-size: 2.1em;
+	}
 }
 
 .voting-sect .voting-bg {
@@ -211,7 +217,7 @@ h3 {
 	position: relative;
 	padding-top: 4%;
 	z-index: 2;
-	width: 35%;
+	width: 41%;
 }
 
 .voting-sect .vote-left h3 {
@@ -219,9 +225,9 @@ h3 {
 }
 
 .voting-sect video {
-	position: relative;
+	position: absolute;
 	width: 64%;
-	margin: -17% 19%;
+	margin: -15% 16%;
 	z-index: 1;
 }
 
@@ -244,11 +250,13 @@ h3 {
 
 .video-library-sect h3 {
 	color: #0600ff;
+	margin-bottom: 4%;
 }
 
 .video-library-sect a {
 	font-size: .3em;
 	color: #f70c0c;
+	padding-left: 3%;
 }
 
 .video-library-sect div {
@@ -271,11 +279,14 @@ h3 {
 .video-library-sect div figure figcaption {
 	background: rgba(255, 0, 0, 0.8);
 	color: #fff;
-	padding: 4%;
+	padding: 4% 4% 10% 4%;
 	display: flex;
 	flex-direction: column;
 	font-family: "Source Code Pro", monospace;
-	margin-top: 104%;
+	margin-top: 102%;
+	display: none;
+	transition: .5s;
+	opacity: 0;
 }
 
 .video-library-sect div figure figcaption h4 {
@@ -292,16 +303,14 @@ h3 {
 	text-transform: uppercase;
 	padding: 5% 0;
 	transform: translateX(0%);
-	animation: ani-titles 1.5s;
-	animation-delay: .25s;
+	animation: ani-titles .5s;
 }
 
 .video-library-sect div figure figcaption a {
 	color: #0600ff;
-	text-align: right;
+	float: right;
 	transform: translateX(0%);
-	animation: ani-titles 1.5s;
-	animation-delay: .75s;
+	animation: ani-titles .5s;
 }
 
 @keyframes ani-titles {
@@ -330,11 +339,14 @@ h3 {
 
 .photo-library-sect h3 {
 	color: #f70c0c;
+	margin-bottom: 4%;
+	margin-top: 7%;
 }
 
 .photo-library-sect a {
 	font-size: .3em;
 	color: #0600ff;
+	padding-left: 3%;
 }
 
 .photo-library-sect div {
@@ -356,10 +368,13 @@ h3 {
 .photo-library-sect div figure figcaption {
 	background: rgba(255, 0, 0, 0.8);
 	color: #fff;
-	padding: 4%;
+	padding: 4% 4% 20% 4%;
 	display: flex;
 	flex-direction: column;
 	font-family: "Source Code Pro", monospace;
+	display: none;
+	transition: .5s;
+	opacity: 0;
 }
 
 .photo-library-sect div figure figcaption h4 {
@@ -376,16 +391,14 @@ h3 {
 	text-transform: uppercase;
 	padding: 5% 0;
 	transform: translateX(0%);
-	animation: ani-titles 1.5s;
-	animation-delay: .25s;
+	animation: ani-titles .5s;
 }
 
 .photo-library-sect div figure figcaption a {
 	color: #0600ff;
-	text-align: right;
+	float: right;
 	transform: translateX(0%);
-	animation: ani-titles 1.5s;
-	animation-delay: .75s;
+	animation: ani-titles .5s;
 }
 
 @keyframes ani-titles {
@@ -448,8 +461,8 @@ h3 {
 
 .photo-library-sect .hotties-pics {
 	background: url(../img/photo-9.jpg) top no-repeat;
-	background-size: 100%;
-	padding-bottom: 35%;
+	background-size: cover;
+	padding-bottom: 30.2%;
 	width: 31.61189358372457%;
 }
 
@@ -484,6 +497,7 @@ h3 {
 footer {
 	background: #f70c0c;
 	padding: 3% 3%;
+	margin-top: 4%;
 }
 
 footer ul {
