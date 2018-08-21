@@ -124,7 +124,7 @@ header .open-nav a:hover {
 	}
 }
 
-section {
+.home section {
 	padding: 0 3%;
 }
 
@@ -221,13 +221,13 @@ section {
 	background-size: 100%;
 }
 
-h3 {
+.home h3 {
 	font-family: "octin-college", sans-serif;
 	font-size: 1.4em;
 }
 
 @media screen and (min-width: 692px) {
-	h3 {
+	.home h3 {
 		font-size: 2.1em;
 	}
 }
