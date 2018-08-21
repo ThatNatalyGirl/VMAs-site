@@ -6,12 +6,15 @@ console.log('Heㄥp Nataㄥy, i @m stuck in tha computer');
 // Mobile Button for Drop Down menu
 var dropDownBtn = document.querySelector('.cat-btn');
 
-dropDownBtn.addEventListener('click', function () {
-	var categoryMenu = document.querySelector('.category-buttons');
-	categoryMenu.classList.toggle('closed');
-	categoryMenu.classList.toggle('open');
-});
+if (dropDownBtn) {
+	dropDownBtn.addEventListener('click', function () {
+		var categoryMenu = document.querySelector('.category-buttons');
+		categoryMenu.classList.toggle('closed');
+		categoryMenu.classList.toggle('open');
+	});
+}
 // ====================================================
+
 
 console.log('Hire Me');
 

@@ -5,12 +5,17 @@ console.log('Heㄥp Nataㄥy, i @m stuck in tha computer')
 // Mobile Button for Drop Down menu
 var dropDownBtn = document.querySelector('.cat-btn'); 
 
-dropDownBtn.addEventListener('click', function() {
-	let categoryMenu = document.querySelector('.category-buttons');
-	categoryMenu.classList.toggle('closed');
-	categoryMenu.classList.toggle('open');
-});
+if (dropDownBtn) {
+	dropDownBtn.addEventListener('click', function() {
+		let categoryMenu = document.querySelector('.category-buttons');
+		categoryMenu.classList.toggle('closed');
+		categoryMenu.classList.toggle('open');
+	});
+}
 // ====================================================
+
+
+
 
 console.log(`Hire Me`)
 
@@ -46,7 +51,7 @@ let hoverInfoBox = document.querySelectorAll("figcaption");
 
 
 hoverInfoBox.forEach(function(box){
-	var figCaption = box.parentNode
+	var figCaption = box.parentNode;
 		
 	figCaption.addEventListener("mouseover", function() {  
 		// console.log(box.parentNode)
