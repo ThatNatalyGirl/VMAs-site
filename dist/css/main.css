@@ -206,142 +206,484 @@ header .open-nav {
 	margin-top: -2px;
 }
 
-header .open-nav li {
+header .open-nav img {
+	width: 4%;
+	height: 4%;
+	margin-top: -1%;
+}
+
+header .open-nav a {
 	font-size: .6em;
+	text-decoration: none;
+	color: #f70c0c;
+	transition: .25s;
+}
+
+header .open-nav a:hover {
+	color: #0600ff;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 1080px) {
+	header .open-nav a {
+		font-size: 1.1em;
+	}
 }
 
 section {
 	padding: 0 3%;
 }
 
-.performers-sect .performers-bg {
-	position: absolute;
-	font-family: "octin-college", sans-serif;
-	color: #0600ff;
-	opacity: .1;
-	font-size: 5.5em;
-	line-height: .8em;
+.performers-sect {
+	padding: 0%;
+	width: 97vw;
 	overflow: hidden;
 }
 
+.performers-sect .performers-bg {
+	background: url(../img/perfomers-BG-type.png) no-repeat top;
+	background-size: 100%;
+	position: absolute;
+	height: 0;
+	padding-bottom: 43%;
+	width: 100%;
+	z-index: -1;
+	margin: -1% 0%;
+}
+
 .performers-sect .performer-imgs {
-	padding: 5% 0 5%;
 	display: flex;
 	justify-content: space-between;
+	width: 160%;
+	margin-bottom: 1%;
 }
 
-.performers-sect .performer-imgs .show-small {
-	width: 25%;
+.performers-sect .performer-imgs .performer {
+	width: 100%;
+	margin: 3% 1%;
+}
+
+.performers-sect .performer-imgs .performer .show-small {
+	width: 100%;
 	height: 0;
-	padding-bottom: 35%;
+	padding-bottom: 128%;
 }
 
-.performers-sect .performer-imgs .show-big {
-	width: 30%;
+.performers-sect .performer-imgs .performer .show-big {
+	width: 131%;
 	height: 0;
-	padding-bottom: 47%;
-	margin-top: -7%;
-	margin-left: -33%;
+	padding-bottom: 165%;
+	margin-top: -149%;
+	margin-left: -15%;
 }
 
-.performers-sect .performer-imgs .shawn-mendez-small {
+.performers-sect .performer-imgs .performer .shawn-mendez-small {
 	background: url(../img/shawn-small.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
-.performers-sect .performer-imgs .shawn-mendez-big {
+.performers-sect .performer-imgs .performer .shawn-mendez-big {
 	background: url(../img/shawn-big.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
-.performers-sect .performer-imgs .ariana-grande-small {
+.performers-sect .performer-imgs .performer .ariana-grande-small {
 	background: url(../img/ariana-small.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
-.performers-sect .performer-imgs .ariana-grande-big {
+.performers-sect .performer-imgs .performer .ariana-grande-big {
 	background: url(../img/ariana-big.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
-.performers-sect .performer-imgs .logic-small {
+.performers-sect .performer-imgs .performer .logic-small {
 	background: url(../img/logic-small.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
-.performers-sect .performer-imgs .logic-big {
+.performers-sect .performer-imgs .performer .logic-big {
 	background: url(../img/logic-big.png) top no-repeat;
 	background-size: 100%;
-	display: block;
 }
 
-.performers-sect .performer-imgs .travis-scott-small {
+.performers-sect .performer-imgs .performer .travis-scott-small {
 	background: url(../img/travis-small.png) top no-repeat;
 	background-size: 100%;
-	display: none;
 }
 
-.performers-sect .performer-imgs .travis-scott-big {
+.performers-sect .performer-imgs .performer .travis-scott-big {
 	background: url(../img/travis-big.png) top no-repeat;
 	background-size: 100%;
-	display: none;
 }
 
-.performers-sect .performer-imgs .post-malone-small {
+.performers-sect .performer-imgs .performer .post-malone-small {
 	background: url(../img/post-small.png) top no-repeat;
 	background-size: 100%;
-	display: none;
 }
 
-.performers-sect .performer-imgs .post-malone-big {
+.performers-sect .performer-imgs .performer .post-malone-big {
 	background: url(../img/post-big.png) top no-repeat;
 	background-size: 100%;
-	display: none;
 }
 
 h3 {
 	font-family: "octin-college", sans-serif;
-	font-size: 2.1em;
+	font-size: 1.4em;
 }
 
-.voting-sect h3 {
+@media screen and (min-width: 692px) {
+	h3 {
+		font-size: 2.1em;
+	}
+}
+
+.voting-sect .voting-bg {
+	background: url(../img/vid-background.png) no-repeat top;
+	background-size: 105%;
+	position: absolute;
+	height: 0;
+	padding-bottom: 39%;
+	margin-left: 8.5%;
+	width: 78%;
+	z-index: -2;
+}
+
+.voting-sect .vote-left {
+	position: relative;
+	padding-top: 4%;
+	z-index: 2;
+	width: 41%;
+}
+
+.voting-sect .vote-left h3 {
 	color: #f70c0c;
 }
 
-.voting-sect h3.vote-right {
+.voting-sect .vote-left h3:nth-child(1) {
+	opacity: 0;
+	animation: ani-voting 2s infinite;
+}
+
+.voting-sect .vote-left h3:nth-child(2) {
+	opacity: 0;
+	animation: ani-voting 2s infinite;
+	animation-delay: .5s;
+}
+
+.voting-sect .vote-left h3:nth-child(3) {
+	opacity: 0;
+	animation: ani-voting 2s infinite;
+	animation-delay: 1s;
+}
+
+@keyframes ani-voting {
+	0% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 1;
+	}
+	66% {
+		opacity: 0;
+	}
+	99% {
+		opacity: 0;
+	}
+}
+
+.voting-sect video {
+	position: absolute;
+	width: 64%;
+	margin: -15% 16%;
+	z-index: 1;
+}
+
+.voting-sect .vote-right {
+	position: relative;
+	padding-top: 4%;
+	padding-right: 2%;
+	float: right;
+	z-index: 2;
+}
+
+.voting-sect .vote-right h3 {
 	color: #0600ff;
+}
+
+.voting-sect .vote-right h3:nth-child(1) {
+	opacity: 0;
+	animation: ani-voting 2s infinite;
+	animation-delay: .5s;
+}
+
+.voting-sect .vote-right h3:nth-child(2) {
+	opacity: 0;
+	animation: ani-voting 2s infinite;
+	animation-delay: 1s;
+}
+
+.voting-sect .vote-right h3:nth-child(3) {
+	opacity: 0;
+	animation: ani-voting 2s infinite;
+	animation-delay: 1.5s;
 }
 
 .video-library-sect {
 	width: 100%;
+	padding-top: 28%;
 }
 
 .video-library-sect h3 {
 	color: #0600ff;
+	margin-bottom: 4%;
 }
 
 .video-library-sect a {
-	font-size: .6em;
+	font-size: .3em;
 	color: #f70c0c;
+	padding-left: 3%;
+}
+
+.video-library-sect div {
+	display: flex;
+}
+
+.video-library-sect div figure {
+	filter: grayscale(100%);
+	transition: .5s;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 47%;
+	width: 100%;
+}
+
+.video-library-sect div figure:hover {
+	filter: none;
+}
+
+.video-library-sect div figure figcaption {
+	background: rgba(255, 0, 0, 0.8);
+	color: #fff;
+	padding: 4% 4% 10% 4%;
+	display: flex;
+	flex-direction: column;
+	font-family: "Source Code Pro", monospace;
+	margin-top: 102%;
+	display: none;
+	transition: .5s;
+	opacity: 0;
+}
+
+.video-library-sect div figure figcaption h4 {
+	background: #0600ff;
+	width: 19%;
+	padding: 1% 4%;
+	font-size: 1.3vw;
+	transform: translateX(0%);
+	animation: ani-titles .5s;
+}
+
+.video-library-sect div figure figcaption h5 {
+	font-size: 1.7vw;
+	text-transform: uppercase;
+	padding: 5% 0;
+	transform: translateX(0%);
+	animation: ani-titles .5s;
+}
+
+.video-library-sect div figure figcaption a {
+	color: #0600ff;
+	float: right;
+	transform: translateX(0%);
+	animation: ani-titles .5s;
+}
+
+@keyframes ani-titles {
+	0% {
+		transform: translateX(-105%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.video-library-sect div .justin-video-of-the-year {
+	background: url(../img/justin-video.jpg) top no-repeat;
+	background-size: cover;
+}
+
+.video-library-sect div .gaga-video-of-the-year {
+	background: url(../img/gaga-video.jpg) top no-repeat;
+	background-size: cover;
+}
+
+.video-library-sect div .fiona-video-of-the-year {
+	background: url(../img/fiona-video.jpg) top no-repeat;
+	background-size: cover;
 }
 
 .photo-library-sect h3 {
 	color: #f70c0c;
+	margin-bottom: 4%;
+	margin-top: 7%;
 }
 
 .photo-library-sect a {
-	font-size: .6em;
+	font-size: .3em;
 	color: #0600ff;
+	padding-left: 3%;
+}
+
+.photo-library-sect div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.photo-library-sect div figure {
+	filter: grayscale(100%);
+	transition: .5s;
+	overflow: hidden;
+	height: 0;
+}
+
+.photo-library-sect div figure:hover {
+	filter: none;
+}
+
+.photo-library-sect div figure figcaption {
+	background: rgba(255, 0, 0, 0.8);
+	color: #fff;
+	padding: 4% 4% 20% 4%;
+	display: flex;
+	flex-direction: column;
+	font-family: "Source Code Pro", monospace;
+	display: none;
+	transition: .5s;
+	opacity: 0;
+}
+
+.photo-library-sect div figure figcaption h4 {
+	background: #0600ff;
+	width: 19%;
+	padding: 1% 4%;
+	font-size: 1.3vw;
+	transform: translateX(0%);
+	animation: ani-titles .5s;
+}
+
+.photo-library-sect div figure figcaption h5 {
+	font-size: 1.7vw;
+	text-transform: uppercase;
+	padding: 5% 0;
+	transform: translateX(0%);
+	animation: ani-titles .5s;
+}
+
+.photo-library-sect div figure figcaption a {
+	color: #0600ff;
+	float: right;
+	transform: translateX(0%);
+	animation: ani-titles .5s;
+}
+
+@keyframes ani-titles {
+	0% {
+		transform: translateX(-105%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.photo-library-sect .jennifer-pics {
+	background: url(../img/photo-1.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 50%;
+	width: 31.61189358372457%;
+}
+
+.photo-library-sect .jennifer-pics figcaption {
+	margin-top: 122%;
+}
+
+.photo-library-sect .column-two {
+	width: 35.9937402190923%;
+	height: 0;
+}
+
+.photo-library-sect .column-two .beyonce-pics {
+	background: url(../img/photo-3.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 65%;
+	width: 100%;
+}
+
+.photo-library-sect .column-two .beyonce-pics figcaption {
+	margin-top: 30%;
+}
+
+.photo-library-sect .column-two .radio-city-pics {
+	background: url(../img/photo-4.jpg) bottom no-repeat;
+	background-size: cover;
+	padding-bottom: 50.5%;
+	width: 100%;
+}
+
+.photo-library-sect .column-two .radio-city-pics figcaption {
+	margin-top: 15%;
+}
+
+.photo-library-sect .miley-pics {
+	background: url(../img/photo-6.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 41.5%;
+	width: 32.3943661971831%;
+}
+
+.photo-library-sect .miley-pics figcaption {
+	margin-top: 91%;
+}
+
+.photo-library-sect .hotties-pics {
+	background: url(../img/photo-9.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 30.2%;
+	width: 31.61189358372457%;
+}
+
+.photo-library-sect .hotties-pics figcaption {
+	margin-top: 58%;
+}
+
+.photo-library-sect .t-swift-pics {
+	background: url(../img/photo-2.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 38.7%;
+	width: 21.0485133020344%;
+	margin-top: -8.5%;
+}
+
+.photo-library-sect .t-swift-pics figcaption {
+	margin-top: 128%;
+}
+
+.photo-library-sect .logic-pics {
+	background: url(../img/photo-7.jpg) top no-repeat;
+	background-size: cover;
+	padding-bottom: 38.7%;
+	width: 47.339593114241%;
+	margin-top: -8.5%;
+}
+
+.photo-library-sect .logic-pics figcaption {
+	margin-top: 51%;
 }
 
 footer {
 	background: #f70c0c;
 	padding: 3% 3%;
+	margin-top: 4%;
 }
 
 footer ul {

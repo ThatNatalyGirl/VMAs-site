@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 console.log(`Hell0`)
 console.log('Heㄥp Nataㄥy, i @m stuck in tha computer')
 
@@ -11,6 +12,9 @@ dropDownBtn.addEventListener('click', function() {
 });
 // ====================================================
 
+=======
+console.log(`Hire Me`)
+>>>>>>> origin/Nataly
 
 //idea for spinning performers
 // pull all the li(s) as an array.
@@ -20,3 +24,50 @@ dropDownBtn.addEventListener('click', function() {
 //on click of any of them also does this..ie makes them go into the center spot and get the class of large
 
 //if there are more than 3 performers than hide the others (left/right) and push/pop the array items as it auto spins
+
+let performers = document.querySelectorAll(".performer");
+let showSmall = document.querySelectorAll(".show-small");
+let showBig = document.querySelectorAll(".show-big");
+
+
+
+
+console.log(performers)
+
+performers.forEach(function(){
+
+})
+
+
+//voting is open/vote now disappears at 3s of video play
+
+
+//Hovers for the Pictures and their Captions
+let hoverInfoBox = document.querySelectorAll("figcaption");
+
+
+hoverInfoBox.forEach(function(box){
+	var figCaption = box.parentNode
+		
+	figCaption.addEventListener("mouseover", function() {  
+		// console.log(box.parentNode)
+		box.style.display = 'block';
+		box.style.opacity = '1';
+	})	
+
+	figCaption.addEventListener("mouseleave", function() {  	
+		box.style.opacity = '0';
+
+		setTimeout(function() {
+			box.style.display = 'none';
+		}, 500);
+	})	
+});
+
+
+
+
+
+
+
+
