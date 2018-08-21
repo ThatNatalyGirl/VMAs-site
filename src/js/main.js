@@ -1,4 +1,16 @@
 console.log(`Hell0`)
+console.log('Heㄥp Nataㄥy, i @m stuck in tha computer')
+
+// Mobile Button for Drop Down menu
+var dropDownBtn = document.querySelector('.cat-btn'); 
+
+dropDownBtn.addEventListener('click', function() {
+	let categoryMenu = document.querySelector('.category-buttons');
+	categoryMenu.classList.toggle('closed');
+	categoryMenu.classList.toggle('open');
+});
+// ====================================================
+
 
 //idea for spinning performers
 // pull all the li(s) as an array.

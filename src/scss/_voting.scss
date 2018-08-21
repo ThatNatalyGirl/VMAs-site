@@ -4,29 +4,162 @@ $secondary-color: #0600ff; //blue
 $primary-font: "octin-college", sans-serif;
 $secondary-font: 'Source Code Pro', monospace;
 
+$tablet-bp: 768px;
+$desktop-bp: 1280px;
 
 
-// ============Category Buttons=========
+@mixin bp-tablet {
+	@media only screen and (min-width: $tablet-bp) {
+		@content;
+	}
+}
 
+@mixin bp-desktop {
+	@media only screen and (min-width: $desktop-bp) {
+		@content;
+	}
+}
+
+
+.wrapper-voting-page {
+	background-image: url(/dist/img/vote-now-bg.png);
+}
+
+	// ============Category Buttons====================
+.mobile-menu {
+	display: flex;
+	justify-content: center;
+
+	button {
+		margin-top: 20px;
+		background: $primary-color;
+		padding: 15px;
+		outline: none;
+		border: none;
+		border-radius: 10px;
+
+		p {
+			font-family: $primary-font;
+		}
+	}
+}
+
+.closed {
+	display: none;
+}
 .category-buttons {
-	ul {
-		display: flex;
+	
+		.open {
+			display: block;
+		}
 
 		li {
 			padding: 10px;
 			text-align: center;
-			height: 5vh;
 			background: $secondary-color;
 
+		a {
+			text-decoration: none;
+			font-family: $secondary-font;
+			color: $primary-color;
+			border-bottom: 1px solid black;
+		}
+	}
+}
+
+
+	// ============ARTIST ICONS========================
+
+.artist-icons {
+	margin-top: 10%;
+	display: flex;
+	flex-direction: columns;
+	justify-content: center;
+
+	button {
+		outline: none;
+		border: none;
+	}
+
+	img {
+		border-top: 15px solid $primary-color;
+		border-bottom: 15px solid $primary-color;
+		border-left: 10px solid $secondary-color;
+		border-right:	10px solid $secondary-color;
+	}
+
+.closed {
+	display: none;
+}
+.artist-text-style{
+		
+		.open {
+			display: block;
+		}
+
+		h2 {
+			font-family: $secondary-font;
+			color: $secondary-color;
+		}
+
+		p {
+			font-family: $primary-font;
+			color: $primary-color;
+		}
+	}	
+}
+
+
+// ==================TABLET================
+.mobile-menu {
+	
+	@include bp-tablet {
+		display: none;
+	}
+}
+
+.category-buttons {
+
+	@include bp-tablet {
+		display: block;
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;		
+
+			li {}
+
 			a {
-				text-decoration: none;
-				font-family: $secondary-font;
-				color: $primary-color;
+				border-bottom: none;
 			}
 		}
 	}
 }
 
 
-.sub-category {
+
+.artist-icons {
+	@include bp-tablet {
+		justify-content: center;
+	}
+
+
 }
+
+
+
+// ==============DESKTOP==============
+.artist-icons {
+	@include bp-desktop {
+	}
+}
+
+
+
+
+
+
+
+
+
