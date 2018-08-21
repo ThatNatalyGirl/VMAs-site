@@ -36,10 +36,12 @@ header{
 		margin-top: 15px;
 		display: flex;
 		width: 50%;
+
 		img{
 			width: 10%;
 			height: 10%;
 		}
+
 		h1{
 			font-family: $primary-font;
 			font-size: 2.3vw;
@@ -56,10 +58,28 @@ header{
 		margin-left: 8%;
 		margin-top: -2px;
 
+		img{
+			width: 4%;
+			height: 4%;
+			margin-top: -1%;
+
+
+		}
+
 		a{
 			font-size: .6em;
 			text-decoration: none;
 			color: $primary-color;
+			transition: .25s;
+
+			&:hover{
+				color: $secondary-color;
+				cursor: pointer;
+			}
+
+			@media screen and (min-width: 1080px){
+				font-size: 1.1em;
+			}
 		} 
 	}
 }
@@ -69,6 +89,10 @@ section{
 }
 
 .performers-sect{
+	padding: 0%;
+	width: 97vw;
+	overflow: hidden;
+
 	.performers-bg{
 		background: url(../img/perfomers-BG-type.png) no-repeat top;
 		background-size: 100%;
@@ -77,81 +101,90 @@ section{
 		padding-bottom: 43%;
 		width: 100%;
 		z-index: -1;
-		margin: -1% 0% -1% -3%;
+		margin: -1% 0%;
 	}
 
 	.performer-imgs{
-		padding: 7% 0 0%;
+		// padding: 7% 0 0%;
 		display: flex;
 		justify-content: space-between;
-		// width: 200%;
+		width: 160%;
+		margin-bottom: 1%;
 
-		div{
-		}
 
-		.show-small{
-			width: 32%;
-			height: 0;
-			padding-bottom: 35%;
-		}
+		.performer{
+			width: 100%;
+			margin: 3% 1%;
 
-		.show-big{
-			width: 40%;
-			height: 0;
-			padding-bottom: 52%;
-			margin-top: -7%;
-			margin-left: -33%;
-		}
+			.show-small{
+				width: 100%;
+				height: 0;
+				padding-bottom: 128%;
+			}
 
-		.shawn-mendez-small{
-			background: url(../img/shawn-small.png) top no-repeat;
-			background-size: 100%;
-		}
+			.show-big{
+				width: 131%;
+				height: 0;
+				padding-bottom: 165%;
+				margin-top: -149%;
+				margin-left: -15%;
+			}
 
-		.shawn-mendez-big{
-			background: url(../img/shawn-big.png) top no-repeat;
-			background-size: 100%;
-		}
+			.shawn-mendez-small{
+				background: url(../img/shawn-small.png) top no-repeat;
+				background-size: 100%;
+			}
 
-		.ariana-grande-small{
-			background: url(../img/ariana-small.png) top no-repeat;
-			background-size: 100%;
-		}
+			.shawn-mendez-big{
+				background: url(../img/shawn-big.png) top no-repeat;
+				background-size: 100%;
+			}
 
-		.ariana-grande-big{
-			background: url(../img/ariana-big.png) top no-repeat;
-			background-size: 100%;
-		}
+			.ariana-grande-small{
+				background: url(../img/ariana-small.png) top no-repeat;
+				background-size: 100%;
+			}
 
-		.logic-small{
-			background: url(../img/logic-small.png) top no-repeat;
-			background-size: 100%;
-		}
+			.ariana-grande-big{
+				background: url(../img/ariana-big.png) top no-repeat;
+				background-size: 100%;
+			}
 
-		.logic-big{
-			background: url(../img/logic-big.png) top no-repeat;
-			background-size: 100%;
-		}
+			.logic-small{
+				background: url(../img/logic-small.png) top no-repeat;
+				background-size: 100%;
+			}
 
-		.travis-scott-small{
-			background: url(../img/travis-small.png) top no-repeat;
-			background-size: 100%;
-		}
+			.logic-big{
+				background: url(../img/logic-big.png) top no-repeat;
+				background-size: 100%;
+			}
 
-		.travis-scott-big{
-			background: url(../img/travis-big.png) top no-repeat;
-			background-size: 100%;
-		}
+			.travis-scott-small{
+				background: url(../img/travis-small.png) top no-repeat;
+				background-size: 100%;
+			}
 
-		.post-malone-small{
-			background: url(../img/post-small.png) top no-repeat;
-			background-size: 100%;
-		}
+			.travis-scott-big{
+				background: url(../img/travis-big.png) top no-repeat;
+				background-size: 100%;
+			}
 
-		.post-malone-big{
-			background: url(../img/post-big.png) top no-repeat;
-			background-size: 100%;
+			.post-malone-small{
+				background: url(../img/post-small.png) top no-repeat;
+				background-size: 100%;
+			}
+
+			.post-malone-big{
+				background: url(../img/post-big.png) top no-repeat;
+				background-size: 100%;
+			}		
+
+			&:nth-child(3){
+				// display: none;
+			}
 		}		
+		
 	}
 }
 
@@ -184,6 +217,38 @@ h3{
 
 		h3{
 			color: $primary-color;
+			
+			&:nth-child(1){
+				opacity: 0;
+				animation: ani-voting 2s infinite;
+			}
+
+			&:nth-child(2){
+				opacity: 0;
+				animation: ani-voting 2s infinite;
+				animation-delay: .5s;
+			}
+
+			&:nth-child(3){
+				opacity: 0;
+				animation: ani-voting 2s infinite;
+				animation-delay: 1s;
+			}
+		}
+	}
+
+	@keyframes ani-voting {
+		0% {
+			opacity: 0;
+		}
+		33%{
+			opacity: 1;
+		}
+		66% {
+			opacity: 0;
+		}
+		99% {
+			opacity: 0;
 		}
 	}
 
@@ -203,8 +268,26 @@ h3{
 
 		h3{
 			color: $secondary-color;
+
+			&:nth-child(1){
+				opacity: 0;
+				animation: ani-voting 2s infinite;
+				animation-delay: .5s;
+			}
+
+			&:nth-child(2){
+				opacity: 0;
+				animation: ani-voting 2s infinite;
+				animation-delay: 1s;
+			}
+
+			&:nth-child(3){
+				opacity: 0;
+				animation: ani-voting 2s infinite;
+				animation-delay: 1.5s;
+			}
 		}	
-	}
+	}		
 }
 
 .video-library-sect{
