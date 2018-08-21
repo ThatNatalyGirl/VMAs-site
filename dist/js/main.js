@@ -13,10 +13,7 @@ dropDownBtn.addEventListener('click', function () {
 });
 // ====================================================
 
-<<<<<<< HEAD
-=======
-console.log("Hire Me");
->>>>>>> origin/Nataly
+console.log('Hire Me');
 
 //idea for spinning performers
 // pull all the li(s) as an array.

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 console.log(`Hell0`)
 console.log('Heㄥp Nataㄥy, i @m stuck in tha computer')
 
@@ -12,9 +12,8 @@ dropDownBtn.addEventListener('click', function() {
 });
 // ====================================================
 
-=======
 console.log(`Hire Me`)
->>>>>>> origin/Nataly
+
 
 //idea for spinning performers
 // pull all the li(s) as an array.
