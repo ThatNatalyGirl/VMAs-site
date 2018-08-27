@@ -1,6 +1,7 @@
 
 $primary-color: #f70c0c; //red
 $secondary-color: #0600ff; //blue
+$accent-color: #ffffff; //white
 
 $primary-font: "octin-college", sans-serif;
 $secondary-font: 'Source Code Pro', monospace;
@@ -27,23 +28,23 @@ $desktop-bp: 1280px;
 }
 
 	// ============Category Buttons====================
-// .mobile-menu {
-// 	display: flex;
-// 	justify-content: center;
+.mobile-menu {
+	display: flex;
+	justify-content: flex-start;
 
-// 	button {
-// 		margin-top: 20px;
-// 		background: $primary-color;
-// 		padding: 15px;
-// 		outline: none;
-// 		border: none;
-// 		border-radius: 10px;
 
-// 		p {
-// 			font-family: $primary-font;
-// 		}
-// 	}
-// }
+	button {
+		margin-top: 20px;
+		background: $primary-color;
+		padding: 15px;
+		outline: none;
+		border: none;
+
+		p {
+			font-family: $primary-font;
+		}
+	}
+}
 
 .closed {
 	display: none;
@@ -71,37 +72,52 @@ $desktop-bp: 1280px;
 
 	// ============ARTIST ICONS========================
 
-// .artist-icons .video-library-sect {
-// 	margin-top: 10%;
-// 	display: flex;
-// 	flex-direction: columns;
-// 	justify-content: center;
+.artist-icons{
+	margin-top: 10%;
+	display: flex;
+	flex-direction: columns;
+	justify-content: center;
 
-// 	button {
-// 		outline: none;
-// 		border: none;
-// 	}
+	button {
+		outline: none;
+		border: none;
+	}
 
-// .closed {
-// 	display: none;
-// }
-// .artist-text-style{
+.closed {
+	display: none;
+}
+.artist-text-style{
 		
-// 		.open {
-// 			display: block;
-// 		}
+		.open {
+			display: block;
+		}
 
-// 		h2 {
-// 			font-family: $secondary-font;
-// 			color: $secondary-color;
-// 		}
+		h2 {
+			margin-top: 2%;
+			font-family: $primary-font;
+			color: $primary-color;
+			width: 90%;
+			margin-left: 2%;
+			
+		}
 
-// 		p {
-// 			font-family: $primary-font;
-// 			color: $primary-color;
-// 		}
-// 	}	
-// }
+		p {
+			font-family: $secondary-font;
+			color: $secondary-color;
+			width: 60%;
+			margin-left: 2%;
+		}
+
+		a {
+			float: right;
+			padding: 10px;
+			margin-bottom: 10px;
+			font-family: $secondary-font;
+			text-decoration: none;
+			background: red;
+		}
+	}	
+}
 
 
 // ==================TABLET================
@@ -135,10 +151,13 @@ $desktop-bp: 1280px;
 
 .artist-icons {
 	@include bp-tablet {
-		justify-content: center;
+		ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		}
 	}
-
-
 }
 
 

@@ -352,6 +352,7 @@ header{
 
 				a{
 					color: $secondary-color;
+
 					float: right;
 					transform: translateX(0%);
 					animation: ani-titles .5s;
@@ -549,17 +550,22 @@ footer{
 	background: $primary-color;
 	padding: 3% 3%;
 	margin-top: 4%;
+	text-align: center;
+	
 
 	ul{
 		display: flex;
-		justify-content: space-between;
-		padding-right: 30%;
+		justify-content: center;
 		padding-bottom: 3%;
+		text-align: center;
+		
 
 		a{
 			color: #fff;
 			font-size: 8px;
 			text-transform: uppercase;
+			text-align: center;
+			margin: auto;
 		}
 	}
 	
@@ -567,6 +573,7 @@ footer{
 		font-family: $secondary-font;
 		color: #fff;
 		font-size: 7px;
+		text-align: center;
 	}
 }
 

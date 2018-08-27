@@ -57,6 +57,23 @@ table {
 	background-image: url(/dist/img/vote-now-bg.png);
 }
 
+.mobile-menu {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.mobile-menu button {
+	margin-top: 20px;
+	background: #f70c0c;
+	padding: 15px;
+	outline: none;
+	border: none;
+}
+
+.mobile-menu button p {
+	font-family: "octin-college", sans-serif;
+}
+
 .closed {
 	display: none;
 }
@@ -76,6 +93,50 @@ table {
 	font-family: "Source Code Pro", monospace;
 	color: #f70c0c;
 	border-bottom: 1px solid black;
+}
+
+.artist-icons {
+	margin-top: 10%;
+	display: flex;
+	flex-direction: columns;
+	justify-content: center;
+}
+
+.artist-icons button {
+	outline: none;
+	border: none;
+}
+
+.artist-icons .closed {
+	display: none;
+}
+
+.artist-icons .artist-text-style .open {
+	display: block;
+}
+
+.artist-icons .artist-text-style h2 {
+	margin-top: 2%;
+	font-family: "octin-college", sans-serif;
+	color: #f70c0c;
+	width: 90%;
+	margin-left: 2%;
+}
+
+.artist-icons .artist-text-style p {
+	font-family: "Source Code Pro", monospace;
+	color: #0600ff;
+	width: 60%;
+	margin-left: 2%;
+}
+
+.artist-icons .artist-text-style a {
+	float: right;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-family: "Source Code Pro", monospace;
+	text-decoration: none;
+	background: red;
 }
 
 @media only screen and (min-width: 768px) {
@@ -99,8 +160,11 @@ table {
 }
 
 @media only screen and (min-width: 768px) {
-	.artist-icons {
-		justify-content: center;
+	.artist-icons ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
 	}
 }
 
@@ -629,25 +693,29 @@ footer {
 	background: #f70c0c;
 	padding: 3% 3%;
 	margin-top: 4%;
+	text-align: center;
 }
 
 footer ul {
 	display: flex;
-	justify-content: space-between;
-	padding-right: 30%;
+	justify-content: center;
 	padding-bottom: 3%;
+	text-align: center;
 }
 
 footer ul a {
 	color: #fff;
 	font-size: 8px;
 	text-transform: uppercase;
+	text-align: center;
+	margin: auto;
 }
 
 footer p {
 	font-family: "Source Code Pro", monospace;
 	color: #fff;
 	font-size: 7px;
+	text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
