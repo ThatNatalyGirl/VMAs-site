@@ -57,24 +57,6 @@ table {
 	background-image: url(/dist/img/vote-now-bg.png);
 }
 
-.mobile-menu {
-	display: flex;
-	justify-content: center;
-}
-
-.mobile-menu button {
-	margin-top: 20px;
-	background: #f70c0c;
-	padding: 15px;
-	outline: none;
-	border: none;
-	border-radius: 10px;
-}
-
-.mobile-menu button p {
-	font-family: "octin-college", sans-serif;
-}
-
 .closed {
 	display: none;
 }
@@ -94,43 +76,6 @@ table {
 	font-family: "Source Code Pro", monospace;
 	color: #f70c0c;
 	border-bottom: 1px solid black;
-}
-
-.artist-icons {
-	margin-top: 10%;
-	display: flex;
-	flex-direction: columns;
-	justify-content: center;
-}
-
-.artist-icons button {
-	outline: none;
-	border: none;
-}
-
-.artist-icons img {
-	border-top: 15px solid #f70c0c;
-	border-bottom: 15px solid #f70c0c;
-	border-left: 10px solid #0600ff;
-	border-right: 10px solid #0600ff;
-}
-
-.artist-icons .closed {
-	display: none;
-}
-
-.artist-icons .artist-text-style .open {
-	display: block;
-}
-
-.artist-icons .artist-text-style h2 {
-	font-family: "Source Code Pro", monospace;
-	color: #0600ff;
-}
-
-.artist-icons .artist-text-style p {
-	font-family: "octin-college", sans-serif;
-	color: #f70c0c;
 }
 
 @media only screen and (min-width: 768px) {
