@@ -4,7 +4,8 @@ console.log('Hell0');
 console.log('Heㄥp Nataㄥy, i @m stuck in tha computer');
 
 // Mobile Button for Drop Down menu
-var dropDownBtn = document.querySelector('.cat-btn');
+var dropDownBtn = document.querySelector('.menu-button');
+console.log(dropDownBtn);
 
 if (dropDownBtn) {
 	dropDownBtn.addEventListener('click', function () {

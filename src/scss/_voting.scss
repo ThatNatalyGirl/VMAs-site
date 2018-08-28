@@ -23,7 +23,7 @@ $desktop-bp: 1280px;
 }
 
 
-.wrapper-voting-page {
+.wrapper-voting-page, .wrapper-new-artist-page {
 	background-image: url(/dist/img/vote-now-bg.png);
 }
 
@@ -32,27 +32,33 @@ $desktop-bp: 1280px;
 	display: flex;
 	justify-content: flex-start;
 
-
-	button {
-		margin-top: 20px;
-		background: $primary-color;
-		padding: 15px;
-		outline: none;
-		border: none;
+	.menu-toggle {
+		background: $secondary-color;
+		width: 100%;
+		padding: 1%;
+		font-size: 25px;
+		font-family: $secondary-font;
 
 		p {
-			font-family: $primary-font;
+			color: $accent-color;
+			float: right;
+			text-decoration: none;
+			transform: translateX(-30px) translateY(-7px) rotate(180deg);
+			font-size: 40px;
+			outline: none;
 		}
 	}
 }
 
 .closed {
 	display: none;
+
 }
 .category-buttons {
 	
 		.open {
 			display: block;
+
 		}
 
 		li {
@@ -75,19 +81,16 @@ $desktop-bp: 1280px;
 .artist-icons{
 	margin-top: 10%;
 	display: flex;
-	flex-direction: columns;
 	justify-content: center;
-
-	button {
-		outline: none;
-		border: none;
+	img {
+		flex-grow: 2;
 	}
 
 .closed {
 	display: none;
 }
 .artist-text-style{
-		
+			
 		.open {
 			display: block;
 		}
@@ -122,23 +125,28 @@ $desktop-bp: 1280px;
 
 // ==================TABLET================
 .mobile-menu {
-	
 	@include bp-tablet {
 		display: none;
 	}
 }
 
 .category-buttons {
-
 	@include bp-tablet {
 		display: block;
-
 		ul {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-around;		
+			justify-content: space-around;
 
-			li {}
+			li:hover {
+				background: white;
+				filter: saturate(8);
+
+			}
+
+			li.active {
+				background: white;
+			}	
 
 			a {
 				border-bottom: none;
@@ -159,6 +167,7 @@ $desktop-bp: 1280px;
 		}
 	}
 }
+
 
 
 
