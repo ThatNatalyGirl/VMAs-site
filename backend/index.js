@@ -5,21 +5,32 @@ const bodyParser = require('body-parser');
 
 const app = express()
 
+let artistA = 0;
+let artistB = 0;
+let artistC = 0;
+
+
+
 app.use(cors());
-// for parsing application/json 
 app.use(bodyParser.json());
-//for parsing application/x-www-from-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
 console.log('running index.js'.blue);
 
 
-app.get('http://localhost:1337', function(req, res) {
+app.get('/', function(req, res) {
 	res.send('Hello World!')
+
+});
+
+app.post('/vote', function(req, res) {
+	res.send('recived Data from DOM')
 
 });
 
 app.listen(1337, function() {
 	console.log('Example app listening on port 1337!'.red)
 });
+
+// in express set up variables for artist then do ++ for when a vote comes in
