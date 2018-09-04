@@ -79,16 +79,16 @@ table {
 	outline: none;
 }
 
-.closed {
-	display: none;
+.category-buttons {
+	transition: max-height 1s ease-in;
+	max-height: 600px;
 }
 
-.category-buttons .open {
-	display: block;
+.category-buttons.closed {
+	max-height: 0;
 }
 
 .category-buttons li {
-	padding: 10px;
 	text-align: center;
 	background: #0600ff;
 }
@@ -101,7 +101,6 @@ table {
 }
 
 .artist-icons {
-	margin-top: 10%;
 	display: flex;
 	justify-content: center;
 }
@@ -112,10 +111,6 @@ table {
 
 .artist-icons .closed {
 	display: none;
-}
-
-.artist-icons .artist-text-style .open {
-	display: block;
 }
 
 .artist-icons .artist-text-style h2 {
@@ -218,7 +213,7 @@ table {
 	}
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 960px) {
 	.best-new-artist h4 {
 		display: none;
 	}
