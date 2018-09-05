@@ -5,10 +5,6 @@ const bodyParser = require('body-parser');
 
 const app = express()
 
-let artistA = 0;
-let artistB = 0;
-let artistC = 0;
-
 
 
 app.use(cors());
@@ -20,7 +16,7 @@ console.log('running index.js'.blue);
 
 
 app.get('/', function(req, res) {
-	res.send('Hello World!')
+	res.send('Hello World! from the server')
 
 });
 

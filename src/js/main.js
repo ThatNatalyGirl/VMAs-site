@@ -7,7 +7,7 @@ var dropDownBtn = document.querySelector('.menu-button');
 
 if (dropDownBtn) {
 	dropDownBtn.addEventListener('click', function() {
-		let categoryMenu = document.querySelector('.category-buttons');
+		let categoryMenu = document.querySelector('.menu-toggle');
 		categoryMenu.classList.toggle('closed');
 	});
 }

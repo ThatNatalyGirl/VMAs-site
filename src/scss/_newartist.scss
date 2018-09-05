@@ -13,7 +13,9 @@ $secondary-color: #0600ff; //blue
 	}
 }
 
-
+.wrapper-new-artist-page {
+	background-image: url(/dist/img/vote-now-bg.png);
+}
 
 // =====MOBILE======
 
@@ -84,6 +86,48 @@ $secondary-color: #0600ff; //blue
 
 	}
 }
+
+
+
+.category-buttons {
+	@include bp-desktop {
+		display: block;
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		li {
+				background: blue;
+			}
+
+			li:hover {
+				background: white;
+				filter: saturate(8);
+			}
+
+			li.active {
+				background: white;
+			}	
+
+			a {
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+
+.best-new-artist {
+	@include bp-desktop {
+		display: flex;
+		.bazzi {
+		order: 1
+		}
+	}
+}
+
+
 
 
 
