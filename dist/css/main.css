@@ -259,6 +259,34 @@ header .open-nav a:hover {
 	margin-left: 2%;
 }
 
+.home .performers-sect .performer-imgs .performer:nth-child(1) .show-big {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(2) .show-small {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(3) .show-big {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(4) .show-small {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(4) .show-big {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(5) .show-small {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(5) .show-big {
+	display: none;
+}
+
 .home .performers-sect .performer-imgs .performer {
 	width: 100%;
 	margin: 3% 1%;
@@ -268,7 +296,7 @@ header .open-nav a:hover {
 	width: 100%;
 	height: 0;
 	padding-bottom: 128%;
-	display: block;
+	z-index: 1;
 }
 
 .home .performers-sect .performer-imgs .performer .show-big {
@@ -277,7 +305,6 @@ header .open-nav a:hover {
 	padding-bottom: 165%;
 	margin-top: -21%;
 	margin-left: -15%;
-	display: block;
 }
 
 .home .performers-sect .performer-imgs .performer .shawn-mendez-small {

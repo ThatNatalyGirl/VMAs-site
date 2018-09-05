@@ -36,7 +36,7 @@ console.log(performers)
 
 setInterval(function() {
 	performers.push(performers.shift());
-	performers[1].style.display = "none";
+	// performers[1].style.display = "none";
 	console.log("meow")
 }, 5000);
 
