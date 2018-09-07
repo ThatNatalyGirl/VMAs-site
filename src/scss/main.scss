@@ -338,7 +338,11 @@ header{
 		font-size: .3em;
 		color: $primary-color;
 		padding-left: 3%;
-		// margin-top-top: 2px;
+
+		&:hover{
+			color: $secondary-color;
+			cursor: pointer;
+		}
 	}
 
 	div{
@@ -432,6 +436,11 @@ header{
 		font-size: .3em;
 		color: $secondary-color;
 		padding-left: 3%;
+		
+		&:hover{
+			color: $primary-color;
+			cursor: pointer;
+		}
 	}
 
 	div{
@@ -589,13 +598,20 @@ footer{
 	ul{
 		display: flex;
 		justify-content: space-between;
-		padding-right: 30%;
+		padding-right: 0%;
 		padding-bottom: 3%;
+		transition: .25s;
+
+		@media screen and (min-width: 692px){
+			padding-right: 30%;
+			transition: .25s;
+		}
 
 		a{
 			color: #fff;
 			font-size: 8px;
 			text-transform: uppercase;
+			text-align: center;
 		}
 	}
 	

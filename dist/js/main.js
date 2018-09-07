@@ -34,9 +34,14 @@ performers = Array.prototype.slice.call(performers);
 console.log(performers);
 
 setInterval(function () {
+	console.log("meow1");
 	performers.push(performers.shift());
+	console.log(performers);
 	// performers[1].style.display = "none";
-	console.log("meow");
+	// performers.unshift.apply( performers, performers.splice(1, performers.length))
+	console.log("meow2");
+	return performers;
+	console.log("meow3");
 }, 5000);
 
 //I think I need to seperate the two big and small and make them into seperate arrays and then apply the styles to each array item instead of the parent

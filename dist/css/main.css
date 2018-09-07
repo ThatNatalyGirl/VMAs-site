@@ -475,6 +475,11 @@ header .open-nav a:hover {
 	padding-left: 3%;
 }
 
+.home .video-library-sect a:hover {
+	color: #0600ff;
+	cursor: pointer;
+}
+
 .home .video-library-sect div {
 	display: flex;
 }
@@ -563,6 +568,11 @@ header .open-nav a:hover {
 	font-size: .3em;
 	color: #0600ff;
 	padding-left: 3%;
+}
+
+.photo-library-sect a:hover {
+	color: #f70c0c;
+	cursor: pointer;
 }
 
 .photo-library-sect div {
@@ -719,14 +729,23 @@ footer {
 footer ul {
 	display: flex;
 	justify-content: space-between;
-	padding-right: 30%;
+	padding-right: 0%;
 	padding-bottom: 3%;
+	transition: .25s;
+}
+
+@media screen and (min-width: 692px) {
+	footer ul {
+		padding-right: 30%;
+		transition: .25s;
+	}
 }
 
 footer ul a {
 	color: #fff;
 	font-size: 8px;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 footer p {

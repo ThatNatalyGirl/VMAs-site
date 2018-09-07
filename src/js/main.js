@@ -32,12 +32,17 @@ let performers = document.querySelectorAll(".performer");
 //turns the nodeList to a real array
 performers = Array.prototype.slice.call(performers);
 
-console.log(performers)
+console.log(performers);
 
 setInterval(function() {
+	console.log("meow1");
 	performers.push(performers.shift());
+	console.log(performers);
 	// performers[1].style.display = "none";
-	console.log("meow")
+	// performers.unshift.apply( performers, performers.splice(1, performers.length))
+	console.log("meow2");
+	return performers;
+	console.log("meow3");
 }, 5000);
 
 
