@@ -28,11 +28,12 @@ console.log(`Hire Me`)
 //if there are more than 3 performers than hide the others (left/right) and push/pop the array items as it auto spins
 
 let performers = document.querySelectorAll(".performer");
+console.log(performers)
 
 //turns the nodeList to a real array
 performers = Array.prototype.slice.call(performers);
 
-console.log(performers);
+console.log("I'm a real array now", performers);
 
 setInterval(function() {
 	console.log("meow1");
