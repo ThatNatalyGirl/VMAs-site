@@ -421,10 +421,6 @@ header .open-nav a:hover {
 	width: 131%;
 	height: 0;
 	padding-bottom: 165%;
-<<<<<<< HEAD
-	margin-top: -149%;
-	margin-left: -10%;
-=======
 	margin-top: -21%;
 	margin-left: -15%;
 }
@@ -432,11 +428,15 @@ header .open-nav a:hover {
 .home .performers-sect .performer-imgs .performer .shawn-mendez-small {
 	background: url(../img/shawn-small.png) top no-repeat;
 	background-size: 100%;
->>>>>>> origin/Nataly
 }
 
 .home .performers-sect .performer-imgs .performer .shawn-mendez-big {
 	background: url(../img/shawn-big.png) top no-repeat;
+	background-size: 100%;
+}
+
+.home .performers-sect .performer-imgs .performer .ariana-grande-small {
+	background: url(../img/ariana-small.png) top no-repeat;
 	background-size: 100%;
 }
 
@@ -445,8 +445,23 @@ header .open-nav a:hover {
 	background-size: 100%;
 }
 
+.home .performers-sect .performer-imgs .performer .logic-small {
+	background: url(../img/logic-small.png) top no-repeat;
+	background-size: 100%;
+}
+
 .home .performers-sect .performer-imgs .performer .logic-big {
 	background: url(../img/logic-big.png) top no-repeat;
+	background-size: 100%;
+}
+
+.home .performers-sect .performer-imgs .performer .travis-scott-small {
+	background: url(../img/travis-small.png) top no-repeat;
+	background-size: 100%;
+}
+
+.home .performers-sect .performer-imgs .performer .travis-scott-big {
+	background: url(../img/travis-big.png) top no-repeat;
 	background-size: 100%;
 }
 
@@ -832,11 +847,6 @@ footer {
 
 footer ul {
 	display: flex;
-<<<<<<< HEAD
-	justify-content: center;
-	padding-bottom: 3%;
-	text-align: center;
-=======
 	justify-content: space-between;
 	padding-right: 0%;
 	padding-bottom: 3%;
@@ -848,7 +858,6 @@ footer ul {
 		padding-right: 30%;
 		transition: .25s;
 	}
->>>>>>> origin/Nataly
 }
 
 footer ul a {
@@ -856,10 +865,7 @@ footer ul a {
 	font-size: 8px;
 	text-transform: uppercase;
 	text-align: center;
-<<<<<<< HEAD
 	margin: auto;
-=======
->>>>>>> origin/Nataly
 }
 
 footer p {
