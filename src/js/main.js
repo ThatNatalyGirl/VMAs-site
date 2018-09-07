@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-
-// console.log(`Hell0`)
-// console.log('Heㄥp Nataㄥy, i @m stuck in tha computer')
-=======
 console.log('Heㄥp Nataㄥy, i @m stuck in tha computer')
->>>>>>> origin/Nataly
 
 // Mobile Button for Drop Down menu
 var dropDownBtn = document.querySelector('.menu-button'); 
@@ -15,11 +9,14 @@ if (dropDownBtn) {
 		categoryMenu.classList.toggle('closed');
 	});
 }
+
 // ====================================================
+console.log(`Hire Me`)
 
 
 //idea for spinning performers
 // pull all the li(s) as an array.
+
 // if they are in the x spot(center spot depending on how many performers there are) of the array then give them a class of show-large if they aren't give them the class of show-small. You'll hide small and large accordingly and have them positioned ontop of each other
 
 //on click of any of them also does this..ie makes them go into the center spot and get the class of large
@@ -29,9 +26,6 @@ if (dropDownBtn) {
 let performers = document.querySelectorAll(".performer");
 console.log(performers)
 
-<<<<<<< HEAD
-// console.log(performers)
-=======
 //turns the nodeList to a real array
 performers = Array.prototype.slice.call(performers);
 
@@ -48,7 +42,6 @@ setInterval(function() {
 	console.log("meow3");
 }, 5000);
 
->>>>>>> origin/Nataly
 
 //I think I need to seperate the two big and small and make them into seperate arrays and then apply the styles to each array item instead of the parent
 
@@ -80,21 +73,21 @@ setInterval(function() {
 	// showSmall.forEach(function(smallPic){
 	// });
 
-<<<<<<< HEAD
-})
-=======
 	// showBig.forEach(function(bigPic){
 	// });
 // });
 
 
->>>>>>> origin/Nataly
 //voting is open/vote now disappears at 3s of video play
+
+
 //Hovers for the Pictures and their Captions
 let hoverInfoBox = document.querySelectorAll("figcaption");
+
+
 hoverInfoBox.forEach(function(box){
 	var figCaption = box.parentNode;
-	
+		
 	figCaption.addEventListener("mouseover", function() {  
 		// console.log(box.parentNode)
 		box.style.display = 'block';
@@ -109,6 +102,11 @@ hoverInfoBox.forEach(function(box){
 		}, 500);
 	})	
 });
+
+
+
+
+
 
 
 
