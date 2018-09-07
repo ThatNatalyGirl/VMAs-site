@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 // console.log(`Hell0`)
 // console.log('Heㄥp Nataㄥy, i @m stuck in tha computer')
+=======
+console.log('Heㄥp Nataㄥy, i @m stuck in tha computer')
+>>>>>>> origin/Nataly
 
 // Mobile Button for Drop Down menu
 var dropDownBtn = document.querySelector('.menu-button'); 
@@ -23,14 +27,68 @@ if (dropDownBtn) {
 //if there are more than 3 performers than hide the others (left/right) and push/pop the array items as it auto spins
 
 let performers = document.querySelectorAll(".performer");
-let showSmall = document.querySelectorAll(".show-small");
-let showBig = document.querySelectorAll(".show-big");
+console.log(performers)
 
+<<<<<<< HEAD
 // console.log(performers)
+=======
+//turns the nodeList to a real array
+performers = Array.prototype.slice.call(performers);
 
-performers.forEach(function(){
+console.log("I'm a real array now", performers);
 
+setInterval(function() {
+	console.log("meow1");
+	performers.push(performers.shift());
+	console.log(performers);
+	// performers[1].style.display = "none";
+	// performers.unshift.apply( performers, performers.splice(1, performers.length))
+	console.log("meow2");
+	return performers;
+	console.log("meow3");
+}, 5000);
+
+>>>>>>> origin/Nataly
+
+//I think I need to seperate the two big and small and make them into seperate arrays and then apply the styles to each array item instead of the parent
+
+//every 5s rotate the array. and run the function to apply the display none/display block on the children of the item 
+
+// performers.forEach(function(performer){
+	//this is looping through the pictures and for each picture it is applying the stylings of showing and hiding the small and big pictures
+	// let showSmall = document.querySelector(".show-small");
+	// let showBig = document.querySelector(".show-big");
+	
+
+
+		// if (performers.indexOf(smallPic) === 1) {
+		// 	smallPic.style.display = "none";
+		// 	console.log("Hide Big");
+		// } else {
+		// 	smallPic.style.display = "block"
+		// 	console.log("Show little");
+		// }		
+
+	// 	if (performers.indexOf(bigPic) === 1) {
+	// 		bigPic.style.display = "block";
+	// 		console.log("Show Big");
+	// 	} else {
+	// 		bigPic.style.display = "none"
+	// 		console.log("Hide Little");
+	// 	}		
+
+	// showSmall.forEach(function(smallPic){
+	// });
+
+<<<<<<< HEAD
 })
+=======
+	// showBig.forEach(function(bigPic){
+	// });
+// });
+
+
+>>>>>>> origin/Nataly
 //voting is open/vote now disappears at 3s of video play
 //Hovers for the Pictures and their Captions
 let hoverInfoBox = document.querySelectorAll("figcaption");

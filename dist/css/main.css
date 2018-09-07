@@ -374,6 +374,35 @@ header .open-nav a:hover {
 	justify-content: space-between;
 	width: 160%;
 	margin-bottom: 1%;
+	margin-left: 2%;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(1) .show-big {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(2) .show-small {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(3) .show-big {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(4) .show-small {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(4) .show-big {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(5) .show-small {
+	display: none;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(5) .show-big {
+	display: none;
 }
 
 .home .performers-sect .performer-imgs .performer {
@@ -385,14 +414,25 @@ header .open-nav a:hover {
 	width: 100%;
 	height: 0;
 	padding-bottom: 128%;
+	z-index: 1;
 }
 
 .home .performers-sect .performer-imgs .performer .show-big {
 	width: 131%;
 	height: 0;
 	padding-bottom: 165%;
+<<<<<<< HEAD
 	margin-top: -149%;
 	margin-left: -10%;
+=======
+	margin-top: -21%;
+	margin-left: -15%;
+}
+
+.home .performers-sect .performer-imgs .performer .shawn-mendez-small {
+	background: url(../img/shawn-small.png) top no-repeat;
+	background-size: 100%;
+>>>>>>> origin/Nataly
 }
 
 .home .performers-sect .performer-imgs .performer .shawn-mendez-big {
@@ -538,6 +578,11 @@ header .open-nav a:hover {
 	padding-left: 3%;
 }
 
+.home .video-library-sect a:hover {
+	color: #0600ff;
+	cursor: pointer;
+}
+
 .home .video-library-sect div {
 	display: flex;
 }
@@ -626,6 +671,11 @@ header .open-nav a:hover {
 	font-size: .3em;
 	color: #0600ff;
 	padding-left: 3%;
+}
+
+.photo-library-sect a:hover {
+	color: #f70c0c;
+	cursor: pointer;
 }
 
 .photo-library-sect div {
@@ -782,9 +832,23 @@ footer {
 
 footer ul {
 	display: flex;
+<<<<<<< HEAD
 	justify-content: center;
 	padding-bottom: 3%;
 	text-align: center;
+=======
+	justify-content: space-between;
+	padding-right: 0%;
+	padding-bottom: 3%;
+	transition: .25s;
+}
+
+@media screen and (min-width: 692px) {
+	footer ul {
+		padding-right: 30%;
+		transition: .25s;
+	}
+>>>>>>> origin/Nataly
 }
 
 footer ul a {
@@ -792,7 +856,10 @@ footer ul a {
 	font-size: 8px;
 	text-transform: uppercase;
 	text-align: center;
+<<<<<<< HEAD
 	margin: auto;
+=======
+>>>>>>> origin/Nataly
 }
 
 footer p {
