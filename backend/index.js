@@ -5,6 +5,13 @@ const bodyParser = require('body-parser');
 
 const app = express()
 
+let votes = [0,0,0,0,0,0]
+
+for (var i = 0; i < votes.length; i++) {
+	votes[i]
+	console.log(votes[i])
+}
+
 
 
 app.use(cors());
@@ -20,8 +27,8 @@ app.get('/', function(req, res) {
 
 });
 
-app.post('/vote', function(req, res) {
-	res.send('recived Data from DOM')
+app.post('/vote/:artistID', function(req, res) {
+	res.send('artist id is ' + req.params.artistID)
 
 });
 
@@ -29,4 +36,3 @@ app.listen(1337, function() {
 	console.log('Example app listening on port 1337!'.red)
 });
 
-// in express set up variables for artist then do ++ for when a vote comes in
