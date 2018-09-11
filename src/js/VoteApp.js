@@ -2,21 +2,20 @@ console.log("THIS IS THE Vote App")
 
 const LOCAL_URL = 'http://localhost:1337/vote'; //for development
 const API_BASE = 'http://159.89.151.127:1337/vote'; // for production
-let voteBtn0 = document.querySelector('.vote0');
-let voteBtn1 = document.querySelector('.vote1');
-let voteBtn2 = document.querySelector('.vote2');
-let voteBtn3 = document.querySelector('.vote3');
-let voteBtn4 = document.querySelector('.vote4');
-let voteBtn5 = document.querySelector('.vote5');
+let voteBtns = document.querySelectorAll('.vote');
 
-
-// for (var i = 0; i < voteBtns.length; i++) {
-voteBtn0.addEventListener('click', function() {
+voteBtns.forEach(function(voteBtn, i) {
+  voteBtn.addEventListener('click', function() {
     axios
-      .post(LOCAL_URL + "/0")
+      .post(LOCAL_URL + "/" + i)
       .then(function (response) {
         console.log(response.data)
-        getData()
+        // getData()
+
+        // display the votes on the page
+        let voteTotals = response.data;
+        
+
     })
       .catch(function (error) {
         console.log(error)
@@ -24,8 +23,9 @@ voteBtn0.addEventListener('click', function() {
     });
   
   });
+})
 
-
+/*
 voteBtn1.addEventListener('click', function() {
   axios
     .post(LOCAL_URL + "/1")
@@ -97,7 +97,7 @@ voteBtn5.addEventListener('click', function() {
 });
 
 // }
-
+*/
 
 
 
@@ -106,12 +106,12 @@ voteBtn5.addEventListener('click', function() {
 
 let getData = function() {
 	axios
-  .get(LOCAL_URL + '/0')
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  })
+    .get(LOCAL_URL + '/0')
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
 }
 

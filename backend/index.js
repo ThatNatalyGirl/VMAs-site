@@ -19,42 +19,19 @@ console.log('running index.js'.blue);
 
 
 app.get('/vote/:artistID', function(req, res) {
-	res.send('getting the votes  ' + votes)
+	res.send(votes)
 });
 
 app.post('/vote/:artistID', function(req, res) {
+
+	let artistNumber = parseInt(req.params.artistID);
 		
-	if (req.params.artistID === '0') {
-		res.send('artist id is ' + req.params.artistID)
-		votes[0]++;
-		console.log(votes)
-		console.log('found first button')
-	} else if (req.params.artistID === '1') {
-			res.send('artist id is ' + req.params.artistID)
-			votes[1]++;
-			console.log(votes)
-			console.log('found second button');
-	} else if (req.params.artistID === '2') {
-			res.send('artist id is ' + req.params.artistID)
-			votes[2]++;
-			console.log(votes)
-			console.log('found  third button');
-	} else if (req.params.artistID === '3') {
-			res.send('artist id is ' + req.params.artistID)
-			votes[3]++;
-			console.log(votes)
-			console.log('found fourth button');
-	} else if (req.params.artistID === '4') {
-			res.send('artist id is ' + req.params.artistID)
-			votes[4]++;
-			console.log(votes)
-			console.log('found fifth button');
-	} else if (req.params.artistID === '5') {
-			res.send('artist id is ' + req.params.artistID)
-			votes[5]++;
-			console.log(votes)
-			console.log('found second button');
-	}
+	console.log('artist id is ' + artistNumber)
+	votes[artistNumber]++;
+	console.log(votes)
+	console.log('found '+artistNumber+'th button')
+
+	res.send(votes)
 });
 
 
