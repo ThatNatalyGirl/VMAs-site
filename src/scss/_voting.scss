@@ -118,12 +118,16 @@ $desktop-bp: 960px;
 			margin-bottom: 3%;
 		}
 
-		a {
+		a { // vote buttons
 			float: right;
 			padding: 10px;
 			font-family: $secondary-font;
 			text-decoration: none;
 			background: red;
+
+			&[disabled] {
+				background: green;
+			}
 		}
 	}	
 }
