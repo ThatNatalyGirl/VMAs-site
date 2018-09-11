@@ -1,0 +1,1 @@
+{"version":3,"sources":["commentApp.js"],"names":["console","log","btn","document","querySelectorAll"],"mappings":";;AAAAA,QAAQC,GAAR,CAAY,yBAAZ;;AAEA,IAAIC,MAAMC,SAASC,gBAAT,CAA0B,UAA1B,CAAV;AACAJ,QAAQC,GAAR,CAAYC,GAAZ","file":"commentApp.js","sourcesContent":["console.log(\"This is the Comment App\");\n\nlet btn = document.querySelectorAll('.comment');\nconsole.log(btn);\n"]}

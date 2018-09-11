@@ -4,36 +4,32 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express()
-// Set Public Folder
-// Body parser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// enable cors 
 app.use(cors());
 
 
 let votes = [0,0,0,0,0,0]
 const port = 1337;
 
-for (var i = 0; i < votes.length; i++) {
-	votes[i]
-}
+// for (var i = 0; i < votes.length; i++) {
+// 	votes[i]
+// }
 console.log('running index.js'.blue);
 
 
-app.get('/', function(req, res) {
-	res.send('Hello World! from the server')
-
+app.get('/vote/:artistID', function(req, res) {
+	res.send('getting the votes  ' + votes)
 });
 
 app.post('/vote/:artistID', function(req, res) {
+		
 	if (req.params.artistID === '0') {
 		res.send('artist id is ' + req.params.artistID)
 		votes[0]++;
 		console.log(votes)
-		console.log('founr first button')
-		
-	}else if (req.params.artistID === '1') {
+		console.log('found first button')
+	} else if (req.params.artistID === '1') {
 			res.send('artist id is ' + req.params.artistID)
 			votes[1]++;
 			console.log(votes)
@@ -53,14 +49,12 @@ app.post('/vote/:artistID', function(req, res) {
 			votes[4]++;
 			console.log(votes)
 			console.log('found fifth button');
-	}	else if (req.params.artistID === '5') {
+	} else if (req.params.artistID === '5') {
 			res.send('artist id is ' + req.params.artistID)
 			votes[5]++;
 			console.log(votes)
 			console.log('found second button');
 	}
-	
-
 });
 
 
