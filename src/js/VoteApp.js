@@ -1,41 +1,29 @@
 console.log("THIS IS THE Vote App")
 
-let url = 'http://localhost:1337/vote';
+const LOCAL_URL = 'http://localhost:1337/vote'; //for development
+const API_BASE = 'http://159.89.151.127:1337/vote'; // for production
 let voteBtns = document.querySelectorAll('.vote');
-const API_BASE = 'http://159.89.151.127:1337/vote';
-console.log(voteBtns);
 
-for (var i = 0; i < voteBtns.length; i++) {
-  voteBtns[i].addEventListener('click', function() {
+voteBtns.forEach(function(voteBtn, i) {
+  voteBtn.addEventListener('click', function() {
+
     axios
-      .post(url + "/0")
+      .post(API_BASE + "/" + i)
       .then(function (response) {
-        console.log(response)
-    })
+        let voteTotals = response.data;
+      voteBtns.forEach(function(voteBtn, j) {
+          voteBtn.setAttribute("disabled", "disabled")
+          voteBtn.innerHTML = voteTotals[j]
+        })
+
+      })
       .catch(function (error) {
         console.log(error)
 
     });
   
   });
-
-}
-
+})
 
 
-
-// let getData = function() {
-// 	axios.get(url + '/0')
-//   .then(function (response) {
-//     console.log(response);
-//   })
-//   .catch(function (error) {
-//     console.log(error);
-//   })
-// }
-
-// voteBtns.forEach(function(voteBtn, i) {
-//   console.log( voteBtn, i )
-
-// })
 
