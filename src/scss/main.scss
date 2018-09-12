@@ -111,41 +111,50 @@ header{
 
 		.performer:nth-child(1){
 			.show-big{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 		}
 
 		.performer:nth-child(2){
 			.show-small{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 		}
 
 		.performer:nth-child(3){
 			.show-big{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 		}
 
 		.performer:nth-child(4){
 			.show-small{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 
 			.show-big{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 		}
 
 		.performer:nth-child(5){
 			.show-small{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 
 			.show-big{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 		}
+
+		//if I do a keyframe animation that slides the images to the right every 5 seconds then with the opacity it will make it lookreally cool
 
 		.performer{
 			width: 100%;
@@ -162,7 +171,7 @@ header{
 				width: 131%;
 				height: 0;
 				padding-bottom: 165%;
-				margin-top: -21%; //-150
+				margin-top: -150%; //-21
 				margin-left: -15%;
 			}
 
