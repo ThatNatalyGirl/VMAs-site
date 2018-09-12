@@ -27,6 +27,9 @@ $desktop-bp: 960px;
 	background-image: url(/dist/img/vote-now-bg.png);
 }
 
+.open {
+	display: block;
+}
 	// ============Category Buttons====================
 .mobile-menu {
 	display: flex;
@@ -82,6 +85,8 @@ $desktop-bp: 960px;
 
 	// ============ARTIST ICONS========================
 
+
+
 .artist-icons{
 	margin-top: 5%;
 	display: flex;
@@ -93,6 +98,7 @@ $desktop-bp: 960px;
 .closed {
 	display: none;
 }
+
 .artist-text-style{
 			
 		h2 {
@@ -117,6 +123,13 @@ $desktop-bp: 960px;
 			margin-top: 3%;
 			margin-bottom: 3%;
 		}
+
+		.user-input {
+			margin: 30px 0 10px 10px;
+			height: 30%;
+			width: 65%;
+		}
+		
 
 		a { // vote buttons
 			float: right;

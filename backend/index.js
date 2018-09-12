@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-
+let comments = [];
 let votes = [0,0,0,0,0,0]
 const port = 1337;
 
@@ -17,7 +17,31 @@ const port = 1337;
 // }
 console.log('running index.js'.blue);
 
+app.get('/', function(req, res) {
+	res.send('In the Comment App');
+});
 
+
+app.post('/comment', function(req, res) {
+	console.log(req.body.text)
+	console.log(comments)
+
+	comments.push( {
+		text: req.body.text
+	})
+	res.send(comments)
+});
+
+
+
+
+
+
+
+
+
+
+///////////VOTE PART////////////////
 app.get('/vote/:artistID', function(req, res) {
 	res.send(votes)
 });

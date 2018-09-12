@@ -9,7 +9,6 @@ var voteBtns = document.querySelectorAll('.vote');
 voteBtns.forEach(function (voteBtn, i) {
   voteBtn.addEventListener('click', function () {
 
-    if (this.getAttribute("disabled")) return;
     axios.post(LOCAL_URL + "/" + i).then(function (response) {
       var voteTotals = response.data;
       voteBtns.forEach(function (voteBtn, j) {
