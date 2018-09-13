@@ -503,7 +503,7 @@ header .open-nav a:hover {
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(5) .show-small {
-	display: none;
+	opacity: 1;
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(5) .show-big {

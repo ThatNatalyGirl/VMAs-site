@@ -20,7 +20,7 @@ var performersSpin = setInterval(function () {
 
 	performersWrapper.insertBefore(performersWrapper.firstElementChild, performersWrapper.lastElementChild);
 	console.log("and next");
-}, 6000);
+}, 1000);
 
 // let allPerformers = Array.prototype.slice.call(document.querySelectorAll(".performer-imgs .performer"));
 // console.log(allPerformers)
