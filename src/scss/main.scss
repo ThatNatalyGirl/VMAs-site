@@ -64,6 +64,7 @@ header{
 
 		a{
 			font-size: .6em;
+			padding: 0 1%;
 			text-decoration: none;
 			color: $primary-color;
 			transition: .25s;
@@ -73,7 +74,7 @@ header{
 				cursor: pointer;
 			}
 
-			@media screen and (min-width: 1080px){
+			@media screen and (min-width: 900px){
 				font-size: 1.1em;
 				transition: .25s;
 			}
@@ -341,6 +342,11 @@ header{
 		font-size: 2.1em;
 		transition: .25s;
 	}
+
+	@media screen and (min-width: 900px){
+		font-size: 3.1em;
+		transition: .25s;
+	}
 }
 
 .home .voting-sect{
@@ -443,20 +449,21 @@ header{
 	h3{
 		color: $secondary-color;
 		margin-bottom: 4%;
-	}
-
-	a{
-		font-size: .3em;
-		color: $primary-color;
-		padding-left: 3%;
-		transition: .25s;
-
-		&:hover{
-			color: $secondary-color;
-			cursor: pointer;
+		
+		a{
+			font-size: .6em;
+			color: $primary-color;
+			padding-left: 3%;
 			transition: .25s;
+
+			&:hover{
+				color: $secondary-color;
+				cursor: pointer;
+				transition: .25s;
+			}
 		}
 	}
+
 
 	div{
 		display: flex;
@@ -508,10 +515,17 @@ header{
 					transform: translateX(0%);
 					animation: ani-titles .5s;
 					transition: .25s;
+					font-size: .6em;
+
 
 					&:hover{
 						color: #fff;
 						cursor: pointer;
+						transition: .25s;
+					}
+
+					@media screen and (min-width: 900px){
+						font-size: 1.1em;
 						transition: .25s;
 					}
 				}
@@ -550,7 +564,7 @@ header{
 		margin-top: 7%;
 		
 		a{
-			font-size: .3em;
+			font-size: .6em;
 			color: $secondary-color;
 			padding-left: 3%;
 			transition: .25s;
@@ -612,11 +626,16 @@ header{
 					transform: translateX(0%);
 					animation: ani-titles .5s;
 					transition: .25s;
-					font-size: .3em;
+					font-size: .6em;
 					
 					&:hover{
 						color: #fff;
 						cursor: pointer;
+						transition: .25s;
+					}
+
+					@media screen and (min-width: 900px){
+						font-size: 1.1em;
 						transition: .25s;
 					}
 				}
@@ -639,7 +658,11 @@ header{
 		width: 31.61189358372457%; //404/1278
 
 		figcaption{
-			margin-top: 122%;
+			margin-top: 115%;
+
+			@media screen and (min-width: 600px){
+				margin-top: 121%;
+			}
 		}
 	}
 
@@ -738,10 +761,11 @@ footer{
 
 		a{
 			color: #fff;
-			font-size: 8px;
+			font-size: .6em;
 			text-transform: uppercase;
 			text-align: center;
 			margin: auto;
+			transition: .25s;
 		}
 	}
 	

@@ -336,6 +336,7 @@ header .open-nav img {
 
 header .open-nav a {
 	font-size: .6em;
+	padding: 0 1%;
 	text-decoration: none;
 	color: #f70c0c;
 	transition: .25s;
@@ -346,7 +347,7 @@ header .open-nav a:hover {
 	cursor: pointer;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 900px) {
 	header .open-nav a {
 		font-size: 1.1em;
 		transition: .25s;
@@ -607,6 +608,13 @@ header .open-nav a:hover {
 	}
 }
 
+@media screen and (min-width: 900px) {
+	.home h3 {
+		font-size: 3.1em;
+		transition: .25s;
+	}
+}
+
 .home .voting-sect .vote-left {
 	position: relative;
 	padding-top: 4%;
@@ -709,14 +717,14 @@ header .open-nav a:hover {
 	margin-bottom: 4%;
 }
 
-.home .video-library-sect a {
-	font-size: .3em;
+.home .video-library-sect h3 a {
+	font-size: .6em;
 	color: #f70c0c;
 	padding-left: 3%;
 	transition: .25s;
 }
 
-.home .video-library-sect a:hover {
+.home .video-library-sect h3 a:hover {
 	color: #0600ff;
 	cursor: pointer;
 	transition: .25s;
@@ -775,12 +783,20 @@ header .open-nav a:hover {
 	transform: translateX(0%);
 	animation: ani-titles .5s;
 	transition: .25s;
+	font-size: .6em;
 }
 
 .home .video-library-sect div figure figcaption a:hover {
 	color: #fff;
 	cursor: pointer;
 	transition: .25s;
+}
+
+@media screen and (min-width: 900px) {
+	.home .video-library-sect div figure figcaption a {
+		font-size: 1.1em;
+		transition: .25s;
+	}
 }
 
 @keyframes ani-titles {
@@ -814,7 +830,7 @@ header .open-nav a:hover {
 }
 
 .photo-library-sect h3 a {
-	font-size: .3em;
+	font-size: .6em;
 	color: #0600ff;
 	padding-left: 3%;
 	transition: .25s;
@@ -877,13 +893,20 @@ header .open-nav a:hover {
 	transform: translateX(0%);
 	animation: ani-titles .5s;
 	transition: .25s;
-	font-size: .3em;
+	font-size: .6em;
 }
 
 .photo-library-sect div figure figcaption a:hover {
 	color: #fff;
 	cursor: pointer;
 	transition: .25s;
+}
+
+@media screen and (min-width: 900px) {
+	.photo-library-sect div figure figcaption a {
+		font-size: 1.1em;
+		transition: .25s;
+	}
 }
 
 @keyframes ani-titles {
@@ -903,7 +926,13 @@ header .open-nav a:hover {
 }
 
 .photo-library-sect .jennifer-pics figcaption {
-	margin-top: 122%;
+	margin-top: 115%;
+}
+
+@media screen and (min-width: 600px) {
+	.photo-library-sect .jennifer-pics figcaption {
+		margin-top: 121%;
+	}
 }
 
 .photo-library-sect .column-two {
@@ -1003,10 +1032,11 @@ footer ul {
 
 footer ul a {
 	color: #fff;
-	font-size: 8px;
+	font-size: .6em;
 	text-transform: uppercase;
 	text-align: center;
 	margin: auto;
+	transition: .25s;
 }
 
 footer p {
