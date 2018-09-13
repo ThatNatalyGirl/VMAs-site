@@ -28,6 +28,8 @@ voteBtns.forEach(function(voteBtn, i) {
 })
 
 
+<<<<<<< HEAD
+=======
 
 
 // let getData = function() {
@@ -45,3 +47,4 @@ voteBtns.forEach(function(voteBtn, i) {
 
 // })
 
+>>>>>>> master
