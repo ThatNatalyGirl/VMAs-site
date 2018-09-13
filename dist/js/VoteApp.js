@@ -2,29 +2,41 @@
 
 console.log("THIS IS THE Vote App");
 
-var url = 'http://localhost:1337/vote';
-var voteBtn = document.querySelector('.vote');
-console.log(voteBtn);
+var LOCAL_URL = 'http://localhost:1337/vote';
+var voteBtns = document.querySelectorAll('.vote');
+var API_BASE = 'http://159.89.151.127:1337/vote';
+console.log(voteBtns);
 
-var artistA = 0;
+voteBtns.forEach(function (voteBtn, i) {
+  voteBtn.addEventListener('click', function () {
 
-voteBtn.addEventListener('click', function (plus) {
-  axios.post(url, {
-    artistA: artistA
-  }).then(function (response) {
-    var artistA = plus;
-    plus++;
-    console.log(response);
-  }).catch(function (error) {
-    console.log(error);
+    if (this.getAttribute("disabled")) return;
+    axios.post(LOCAL_URL + "/" + i).then(function (response) {
+      console.log(response.data);
+      // display the votes on the page
+      var voteTotals = response.data;
+      voteBtns.forEach(function (voteBtn, j) {
+        voteBtn.setAttribute("disabled", "disabled");
+        voteBtn.innerHTML = voteTotals[j];
+      });
+    }).catch(function (error) {
+      console.log(error);
+    });
   });
 });
 
-var getData = function getData() {
-  axios.get('http://localhost:1337').then(function (response) {
-    console.log(response);
-  }).catch(function (error) {
-    console.log(error);
-  });
-};
+// let getData = function() {
+// 	axios.get(url + '/0')
+//   .then(function (response) {
+//     console.log(response);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   })
+// }
+
+// voteBtns.forEach(function(voteBtn, i) {
+//   console.log( voteBtn, i )
+
+// })
 //# sourceMappingURL=VoteApp.js.map

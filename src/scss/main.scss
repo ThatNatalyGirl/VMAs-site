@@ -109,7 +109,8 @@ header{
 
 		.performer:nth-child(1){
 			.show-big{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 
 			.show-small{
@@ -142,7 +143,8 @@ header{
 
 		.performer:nth-child(2){
 			.show-small{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 
 			.show-big{
@@ -175,7 +177,8 @@ header{
 
 		.performer:nth-child(3){
 			.show-big{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 
 			.show-small{
@@ -210,6 +213,7 @@ header{
 		.performer:nth-child(4){
 			.show-small{
 				opacity: 0;
+				transition: .2s;
 				transform: translateX(0%);
 				animation: ani-perf-four 6s linear;
 			}
@@ -233,22 +237,28 @@ header{
 				100% {
 					transform: translateX(-110%);
 					opacity: .9;
-					
 				}
 			}
 
 			.show-big{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 		}
 
 		.performer:nth-child(5){
 			.show-small{
+<<<<<<< HEAD
 				opacity: 1;
+=======
+				opacity: 0;
+				transition: .2s;
+>>>>>>> master
 			}
 
 			.show-big{
-				display: none;
+				opacity: 0;
+				transition: .2s;
 			}
 		}
 
@@ -268,7 +278,7 @@ header{
 				width: 131%;
 				height: 0;
 				padding-bottom: 165%;
-				margin-top: -21%; //-150
+				margin-top: -150%; //-21
 				margin-left: -15%;
 				transform: translateX(0%);
 			}
@@ -322,13 +332,7 @@ header{
 			.nicki-big{
 				background: url(../img/nicki-big.png) top no-repeat;
 				background-size: 100%;
-				// margin-left: -6%;
-				// margin-top: -11%;
 			}		
-
-			&:nth-child(3){
-				// display: none;
-			}
 		}		
 	}
 }
@@ -404,11 +408,6 @@ header{
 		padding: 5%;
 		width: 78%;
 		transition: .25s;
-
-		// @media screen and (min-width: 800px){
-		// 	margin: -10% 8.5% 10%;
-		// 	transition: .25s;
-		// }
 	}
 
 	.vote-right{

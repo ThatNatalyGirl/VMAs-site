@@ -119,6 +119,10 @@ $desktop-bp: 960px;
 			text-decoration: none;
 			background: red;
 		}
+
+		&[disabled] {
+				background: green;
+		}
 	}	
 }
 

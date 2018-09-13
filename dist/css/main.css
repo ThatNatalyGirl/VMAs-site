@@ -142,6 +142,10 @@ table {
 	background: red;
 }
 
+.artist-icons .artist-text-style[disabled] {
+	background: green;
+}
+
 @media only screen and (min-width: 768px) {
 	.mobile-menu {
 		display: block;
@@ -378,7 +382,8 @@ header .open-nav a:hover {
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(1) .show-big {
-	display: none;
+	opacity: 0;
+	transition: .2s;
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(1) .show-small {
@@ -409,7 +414,8 @@ header .open-nav a:hover {
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(2) .show-small {
-	display: none;
+	opacity: 0;
+	transition: .2s;
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(2) .show-big {
@@ -440,7 +446,8 @@ header .open-nav a:hover {
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(3) .show-big {
-	display: none;
+	opacity: 0;
+	transition: .2s;
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(3) .show-small {
@@ -472,6 +479,7 @@ header .open-nav a:hover {
 
 .home .performers-sect .performer-imgs .performer:nth-child(4) .show-small {
 	opacity: 0;
+	transition: .2s;
 	transform: translateX(0%);
 	animation: ani-perf-four 6s linear;
 }
@@ -499,15 +507,22 @@ header .open-nav a:hover {
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(4) .show-big {
-	display: none;
+	opacity: 0;
+	transition: .2s;
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(5) .show-small {
+<<<<<<< HEAD
 	opacity: 1;
+=======
+	opacity: 0;
+	transition: .2s;
+>>>>>>> master
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(5) .show-big {
-	display: none;
+	opacity: 0;
+	transition: .2s;
 }
 
 .home .performers-sect .performer-imgs .performer {
@@ -527,7 +542,7 @@ header .open-nav a:hover {
 	width: 131%;
 	height: 0;
 	padding-bottom: 165%;
-	margin-top: -21%;
+	margin-top: -150%;
 	margin-left: -15%;
 	transform: translateX(0%);
 }
