@@ -10,20 +10,6 @@
 // 	});
 // }
 
-<<<<<<< HEAD
-// // ====================================================
-// console.log(`Hire Me`)
-
-// setInterval(function() {
-// 	let performersWrapper = document.querySelector(".performer-imgs");
-
-// 	performersWrapper.insertBefore(performersWrapper.lastElementChild, performersWrapper.firstElementChild)
-// 	console.log("and next");
-
-// }, 5000);
-
-
-=======
 // ==================================================== Spinning performers
 console.log(`Hire Me`)
 
@@ -72,39 +58,17 @@ votingVideo.addEventListener("pause", function() {
 	voteLeft.style.opacity = "1";
 	voteRight.style.opacity = "1";
 }, true);
->>>>>>> ad5122bb1129208c53c4ae92d50d7ef565e78224
 
-// //voting is open/vote now disappears at 3s of video play
-
-<<<<<<< HEAD
-// // ====================================================
-=======
 // ==================================================== Picture hover state
->>>>>>> ad5122bb1129208c53c4ae92d50d7ef565e78224
+
 
 // //Hovers for the Pictures and their Captions
-// let hoverInfoBox = document.querySelectorAll("figcaption");
+let hoverInfoBox = document.querySelectorAll("figcaption");
 
 
-// hoverInfoBox.forEach(function(box){
-// 	var figCaption = box.parentNode;
+hoverInfoBox.forEach(function(box){
+	var figCaption = box.parentNode;
 		
-<<<<<<< HEAD
-// 	figCaption.addEventListener("mouseover", function() {  
-// 		// console.log(box.parentNode)
-// 		box.style.display = 'block';
-// 		box.style.opacity = '1';
-// 	})	
-
-// 	figCaption.addEventListener("mouseleave", function() {  	
-// 		box.style.opacity = '0';
-
-// 		setTimeout(function() {
-// 			box.style.display = 'none';
-// 		}, 500);
-// 	})	
-// });
-=======
 	figCaption.addEventListener("mouseover", function() {	
 		// console.log(box.parentNode)
 		box.style.display = 'block';
@@ -119,7 +83,6 @@ votingVideo.addEventListener("pause", function() {
 		}, 500);
 	})	
 });
->>>>>>> ad5122bb1129208c53c4ae92d50d7ef565e78224
 
 
 
