@@ -214,9 +214,7 @@ header{
 		.performer:nth-child(4){
 			.show-small{
 				opacity: 0;
-<<<<<<< HEAD
 				transition: .2s;
-=======
 				transform: translateX(0%);
 				animation: ani-perf-four 6s linear;
 			}
@@ -240,9 +238,7 @@ header{
 				100% {
 					transform: translateX(-110%);
 					opacity: .9;
-					
 				}
->>>>>>> origin/Nataly
 			}
 
 			.show-big{
@@ -262,8 +258,6 @@ header{
 				transition: .2s;
 			}
 		}
-
-		//if I do a keyframe animation that slides the images to the right every 5 seconds then with the opacity it will make it lookreally cool
 
 		.performer{
 			width: 100%;
@@ -335,15 +329,8 @@ header{
 			.nicki-big{
 				background: url(../img/nicki-big.png) top no-repeat;
 				background-size: 100%;
-				// margin-left: -6%;
-				// margin-top: -11%;
 			}		
-
-			&:nth-child(3){
-				// display: none;
-			}
 		}		
-		
 	}
 }
 
@@ -418,11 +405,6 @@ header{
 		padding: 5%;
 		width: 78%;
 		transition: .25s;
-
-		// @media screen and (min-width: 800px){
-		// 	margin: -10% 8.5% 10%;
-		// 	transition: .25s;
-		// }
 	}
 
 	.vote-right{

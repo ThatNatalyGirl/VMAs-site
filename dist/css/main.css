@@ -498,9 +498,7 @@ header .open-nav a:hover {
 
 .home .performers-sect .performer-imgs .performer:nth-child(4) .show-small {
 	opacity: 0;
-<<<<<<< HEAD
 	transition: .2s;
-=======
 	transform: translateX(0%);
 	animation: ani-perf-four 6s linear;
 }
@@ -525,7 +523,6 @@ header .open-nav a:hover {
 		transform: translateX(-110%);
 		opacity: .9;
 	}
->>>>>>> origin/Nataly
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(4) .show-big {
