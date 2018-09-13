@@ -57,10 +57,6 @@ table {
 	background-image: url(/dist/img/vote-now-bg.png);
 }
 
-.open {
-	display: block;
-}
-
 .mobile-menu {
 	display: flex;
 	justify-content: center;
@@ -137,28 +133,16 @@ table {
 	width: 60%;
 }
 
-.artist-icons .artist-text-style .comment {
-	float: right;
-	width: 0%;
-	margin-top: 3%;
-	margin-bottom: 3%;
-}
-
-.artist-icons .artist-text-style .user-input {
-	margin: 30px 0 10px 10px;
-	height: 30%;
-	width: 65%;
-}
-
 .artist-icons .artist-text-style a {
 	float: right;
 	padding: 10px;
+	margin-bottom: 10px;
 	font-family: "Source Code Pro", monospace;
 	text-decoration: none;
 	background: red;
 }
 
-.artist-icons .artist-text-style a[disabled] {
+.artist-icons .artist-text-style[disabled] {
 	background: green;
 }
 
@@ -269,14 +253,12 @@ table {
 		display: block;
 	}
 	.category-buttons ul {
-		margin: 10px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 	}
 	.category-buttons ul li {
 		background: blue;
-		padding: 10px;
 	}
 	.category-buttons ul li:hover {
 		background: white;
@@ -287,7 +269,6 @@ table {
 	}
 	.category-buttons ul a {
 		border-bottom: none;
-		padding: 15px;
 	}
 }
 
