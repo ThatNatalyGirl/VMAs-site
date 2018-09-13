@@ -33,12 +33,12 @@ let sendComment = function() {
 
 	// console.log("send comment for artist: ", this.getAttribute('data-artist'))
 	axios
-		.post(LOCAL_URL_COMMENT + "/" + this.dataset.artist , {
+		.post(API_BASE_COMMENT + "/" + this.dataset.artist , {
 			text: newComment
 		})
 		.then(function(response) {
 			console.log('server responsed', response)
-			// showComments(response.data)
+			showComments(response.data)
 		})
 		.catch(function(error) {
 			console.log('Not Working', error)
@@ -54,19 +54,25 @@ postBtn.forEach(function(btn) {
 
 
 
-// let showComments = function(comments) {
-// 	console.log('showing comments', comments)
+let showComments = function(comments) {
+	console.log('showing comments', comments)
 
-// 	let commentsUL = document.querySelector('ul.comments');
-// 	commentsUL.innerHTML = '';
+	let commentsUL = document.querySelector('ul.comments');
+	commentsUL.innerHTML = '';
 
-// 	comments.forEach(function(showComment) {
-// 		let showComment = document.createElement('li');
-// 		showComment.innerHTML = `${comment.text}`
+	comments.forEach(function(showComment) {
+		
+		showComment.forEach(function(p) {
+		let newComment = document.createElement('li');
+		newComment.innerHTML = `${p.text}`
+		console.log("New Comment" + newComment);
+		commentsUL.appendChild( newComment )
+		})
+		
 
-// 		commentsUL.appendChild( newComment )
-// 	})
-// }
+	
+	})
+}
 
 
 

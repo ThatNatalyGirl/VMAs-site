@@ -32,11 +32,11 @@ var sendComment = function sendComment() {
 	console.log("send comment for artist: ", this.dataset.artist);
 
 	// console.log("send comment for artist: ", this.getAttribute('data-artist'))
-	axios.post(LOCAL_URL_COMMENT + "/" + this.dataset.artist, {
+	axios.post(API_BASE_COMMENT + "/" + this.dataset.artist, {
 		text: newComment
 	}).then(function (response) {
 		console.log('server responsed', response);
-		// showComments(response.data)
+		showComments(response.data);
 	}).catch(function (error) {
 		console.log('Not Working', error);
 	});
@@ -46,17 +46,20 @@ postBtn.forEach(function (btn) {
 	btn.addEventListener('click', sendComment);
 });
 
-// let showComments = function(comments) {
-// 	console.log('showing comments', comments)
+var showComments = function showComments(comments) {
+	console.log('showing comments', comments);
 
-// 	let commentsUL = document.querySelector('ul.comments');
-// 	commentsUL.innerHTML = '';
+	var commentsUL = document.querySelector('ul.comments');
+	commentsUL.innerHTML = '';
 
-// 	comments.forEach(function(showComment) {
-// 		let showComment = document.createElement('li');
-// 		showComment.innerHTML = `${comment.text}`
+	comments.forEach(function (showComment) {
 
-// 		commentsUL.appendChild( newComment )
-// 	})
-// }
+		showComment.forEach(function (p) {
+			var newComment = document.createElement('li');
+			newComment.innerHTML = '' + p.text;
+			console.log("New Comment" + newComment);
+			commentsUL.appendChild(newComment);
+		});
+	});
+};
 //# sourceMappingURL=commentApp.js.map

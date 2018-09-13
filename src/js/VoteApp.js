@@ -10,7 +10,7 @@ voteBtns.forEach(function(voteBtn, i) {
 
   if (this.getAttribute("disabled")) return
     axios
-      .post(LOCAL_URL + "/" + i)
+      .post(API_BASE + "/" + i)
       .then(function (response) {
         console.log(response.data)
         // display the votes on the page
@@ -28,9 +28,6 @@ voteBtns.forEach(function(voteBtn, i) {
 })
 
 
-<<<<<<< HEAD
-=======
-
 
 // let getData = function() {
 // 	axios.get(url + '/0')
@@ -47,4 +44,3 @@ voteBtns.forEach(function(voteBtn, i) {
 
 // })
 
->>>>>>> master
