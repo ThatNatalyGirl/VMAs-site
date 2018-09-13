@@ -57,10 +57,6 @@ table {
 	background-image: url(/dist/img/vote-now-bg.png);
 }
 
-.open {
-	display: block;
-}
-
 .mobile-menu {
 	display: flex;
 	justify-content: center;
@@ -137,28 +133,16 @@ table {
 	width: 60%;
 }
 
-.artist-icons .artist-text-style .comment {
-	float: right;
-	width: 0%;
-	margin-top: 3%;
-	margin-bottom: 3%;
-}
-
-.artist-icons .artist-text-style .user-input {
-	margin: 30px 0 10px 10px;
-	height: 30%;
-	width: 65%;
-}
-
 .artist-icons .artist-text-style a {
 	float: right;
 	padding: 10px;
+	margin-bottom: 10px;
 	font-family: "Source Code Pro", monospace;
 	text-decoration: none;
 	background: red;
 }
 
-.artist-icons .artist-text-style a[disabled] {
+.artist-icons .artist-text-style[disabled] {
 	background: green;
 }
 
@@ -269,14 +253,12 @@ table {
 		display: block;
 	}
 	.category-buttons ul {
-		margin: 10px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 	}
 	.category-buttons ul li {
 		background: blue;
-		padding: 10px;
 	}
 	.category-buttons ul li:hover {
 		background: white;
@@ -287,7 +269,6 @@ table {
 	}
 	.category-buttons ul a {
 		border-bottom: none;
-		padding: 15px;
 	}
 }
 
@@ -368,6 +349,7 @@ header .open-nav a:hover {
 @media screen and (min-width: 1080px) {
 	header .open-nav a {
 		font-size: 1.1em;
+		transition: .25s;
 	}
 }
 
@@ -376,9 +358,8 @@ header .open-nav a:hover {
 }
 
 .home .performers-sect {
-	padding: 0%;
+	padding: 1% 0 0;
 	width: 97vw;
-	overflow: hidden;
 }
 
 .home .performers-sect .performers-bg {
@@ -405,9 +386,63 @@ header .open-nav a:hover {
 	transition: .2s;
 }
 
+.home .performers-sect .performer-imgs .performer:nth-child(1) .show-small {
+	transform: translateX(0%);
+	animation: ani-perf-one 6s linear;
+}
+
+@keyframes ani-perf-one {
+	0% {
+		transform: translateX(0%);
+		opacity: 0;
+	}
+	10% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	75% {
+		transform: translateX(0%);
+	}
+	90% {
+		transform: translateX(-100%) scale(0.7);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-100%) scale(0.7);
+		opacity: .9;
+	}
+}
+
 .home .performers-sect .performer-imgs .performer:nth-child(2) .show-small {
 	opacity: 0;
 	transition: .2s;
+}
+
+.home .performers-sect .performer-imgs .performer:nth-child(2) .show-big {
+	transform: translateX(0%);
+	animation: ani-perf-two 6s linear;
+}
+
+@keyframes ani-perf-two {
+	0% {
+		transform: translateX(0%);
+		opacity: 0;
+	}
+	10% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	75% {
+		transform: translateX(0%);
+	}
+	90% {
+		transform: translateX(-85%) scale(0.7);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-85%) scale(0.7);
+		opacity: .9;
+	}
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(3) .show-big {
@@ -415,9 +450,60 @@ header .open-nav a:hover {
 	transition: .2s;
 }
 
+.home .performers-sect .performer-imgs .performer:nth-child(3) .show-small {
+	transform: translateX(0%);
+	animation: ani-perf-three 6s linear;
+}
+
+@keyframes ani-perf-three {
+	0% {
+		transform: translateX(0%);
+		opacity: 0;
+	}
+	10% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	75% {
+		transform: translateX(0%);
+	}
+	90% {
+		transform: translateX(-115%) scale(1.3);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-115%) scale(1.3);
+		opacity: .9;
+	}
+}
+
 .home .performers-sect .performer-imgs .performer:nth-child(4) .show-small {
 	opacity: 0;
 	transition: .2s;
+	transform: translateX(0%);
+	animation: ani-perf-four 6s linear;
+}
+
+@keyframes ani-perf-four {
+	0% {
+		transform: translateX(0%);
+		opacity: 0;
+	}
+	10% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	75% {
+		transform: translateX(0%);
+	}
+	90% {
+		transform: translateX(-110%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-110%);
+		opacity: .9;
+	}
 }
 
 .home .performers-sect .performer-imgs .performer:nth-child(4) .show-big {
@@ -445,6 +531,7 @@ header .open-nav a:hover {
 	height: 0;
 	padding-bottom: 128%;
 	z-index: 1;
+	transform: translateX(0%);
 }
 
 .home .performers-sect .performer-imgs .performer .show-big {
@@ -453,6 +540,7 @@ header .open-nav a:hover {
 	padding-bottom: 165%;
 	margin-top: -150%;
 	margin-left: -15%;
+	transform: translateX(0%);
 }
 
 .home .performers-sect .performer-imgs .performer .shawn-mendez-small {
@@ -493,38 +581,30 @@ header .open-nav a:hover {
 .home .performers-sect .performer-imgs .performer .travis-scott-big {
 	background: url(../img/travis-big.png) top no-repeat;
 	background-size: 100%;
+	margin-top: -22%;
 }
 
-.home .performers-sect .performer-imgs .performer .post-malone-small {
-	background: url(../img/post-small.png) top no-repeat;
+.home .performers-sect .performer-imgs .performer .nicki-small {
+	background: url(../img/nicki-small.png) top no-repeat;
 	background-size: 100%;
 }
 
-.home .performers-sect .performer-imgs .performer .post-malone-big {
-	background: url(../img/post-big.png) top no-repeat;
+.home .performers-sect .performer-imgs .performer .nicki-big {
+	background: url(../img/nicki-big.png) top no-repeat;
 	background-size: 100%;
 }
 
 .home h3 {
 	font-family: "octin-college", sans-serif;
 	font-size: 1.4em;
+	transition: .25s;
 }
 
 @media screen and (min-width: 692px) {
 	.home h3 {
 		font-size: 2.1em;
+		transition: .25s;
 	}
-}
-
-.home .voting-sect .voting-bg {
-	background: url(../img/vid-background.png) no-repeat top;
-	background-size: 105%;
-	position: absolute;
-	height: 0;
-	padding-bottom: 39%;
-	margin-left: 8.5%;
-	width: 78%;
-	z-index: -2;
 }
 
 .home .voting-sect .vote-left {
@@ -532,6 +612,14 @@ header .open-nav a:hover {
 	padding-top: 4%;
 	z-index: 2;
 	width: 41%;
+	transition: .25s;
+}
+
+@media screen and (min-width: 800px) {
+	.home .voting-sect .vote-left {
+		padding-top: 9%;
+		transition: .25s;
+	}
 }
 
 .home .voting-sect .vote-left h3 {
@@ -571,15 +659,19 @@ header .open-nav a:hover {
 }
 
 .home .voting-sect video {
+	background: url(../img/vid-background.png) no-repeat top;
+	background-size: 130%;
 	position: absolute;
-	width: 64%;
-	margin: -15% 16%;
+	margin: -20% 8.5% 10%;
 	z-index: 1;
+	padding: 5%;
+	width: 78%;
+	transition: .25s;
 }
 
 .home .voting-sect .vote-right {
 	position: relative;
-	padding-top: 4%;
+	padding-top: 9%;
 	padding-right: 2%;
 	float: right;
 	z-index: 2;
@@ -609,7 +701,7 @@ header .open-nav a:hover {
 
 .home .video-library-sect {
 	width: 100%;
-	padding-top: 28%;
+	padding-top: 40%;
 }
 
 .home .video-library-sect h3 {
@@ -621,11 +713,13 @@ header .open-nav a:hover {
 	font-size: .3em;
 	color: #f70c0c;
 	padding-left: 3%;
+	transition: .25s;
 }
 
 .home .video-library-sect a:hover {
 	color: #0600ff;
 	cursor: pointer;
+	transition: .25s;
 }
 
 .home .video-library-sect div {
@@ -680,6 +774,13 @@ header .open-nav a:hover {
 	float: right;
 	transform: translateX(0%);
 	animation: ani-titles .5s;
+	transition: .25s;
+}
+
+.home .video-library-sect div figure figcaption a:hover {
+	color: #fff;
+	cursor: pointer;
+	transition: .25s;
 }
 
 @keyframes ani-titles {
@@ -712,15 +813,17 @@ header .open-nav a:hover {
 	margin-top: 7%;
 }
 
-.photo-library-sect a {
+.photo-library-sect h3 a {
 	font-size: .3em;
 	color: #0600ff;
 	padding-left: 3%;
+	transition: .25s;
 }
 
-.photo-library-sect a:hover {
+.photo-library-sect h3 a:hover {
 	color: #f70c0c;
 	cursor: pointer;
+	transition: .25s;
 }
 
 .photo-library-sect div {
@@ -773,6 +876,14 @@ header .open-nav a:hover {
 	float: right;
 	transform: translateX(0%);
 	animation: ani-titles .5s;
+	transition: .25s;
+	font-size: .3em;
+}
+
+.photo-library-sect div figure figcaption a:hover {
+	color: #fff;
+	cursor: pointer;
+	transition: .25s;
 }
 
 @keyframes ani-titles {

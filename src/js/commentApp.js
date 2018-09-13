@@ -2,10 +2,11 @@ console.log("This is the Comment App");
 const LOCAL_URL_COMMENT = 'http://localhost:1337/comment';
 const API_BASE_COMMENT = 'http://159.89.151.127:1337/comment'
 let commentBtns = document.querySelectorAll('.comment');
+console.log(commentBtns);
 // let commentInput = document.querySelectorAll('input[name="user-comment"]');
 let postBtn = document.querySelectorAll('.send');
 
-
+//THIS IS THE NEW COMMENT APP
 
 
 

@@ -28,3 +28,23 @@ voteBtns.forEach(function(voteBtn, i) {
 })
 
 
+<<<<<<< HEAD
+=======
+
+
+// let getData = function() {
+// 	axios.get(url + '/0')
+//   .then(function (response) {
+//     console.log(response);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   })
+// }
+
+// voteBtns.forEach(function(voteBtn, i) {
+//   console.log( voteBtn, i )
+
+// })
+
+>>>>>>> master
