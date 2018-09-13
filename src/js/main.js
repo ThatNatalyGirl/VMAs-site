@@ -16,7 +16,8 @@ console.log(`Hire Me`)
 let performersSpin = setInterval(function() {
 	let performersWrapper = document.querySelector(".performer-imgs");
 
-	performersWrapper.insertBefore(performersWrapper.firstElementChild, performersWrapper.lastElementChild)
+	// performersWrapper.insertBefore(performersWrapper.lastElementChild, performersWrapper.firstElementChild)
+	performersWrapper.appendChild(performersWrapper.firstElementChild)
 	console.log("and next");
 
 }, 6000);

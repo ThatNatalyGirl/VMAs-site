@@ -18,7 +18,8 @@ console.log("Hire Me");
 var performersSpin = setInterval(function () {
 	var performersWrapper = document.querySelector(".performer-imgs");
 
-	performersWrapper.insertBefore(performersWrapper.firstElementChild, performersWrapper.lastElementChild);
+	// performersWrapper.insertBefore(performersWrapper.lastElementChild, performersWrapper.firstElementChild)
+	performersWrapper.appendChild(performersWrapper.firstElementChild);
 	console.log("and next");
 }, 6000);
 
