@@ -123,6 +123,7 @@ $secondary-color: #0600ff; //blue
 .best-new-artist {
 	@include bp-desktop {
 		display: flex;
+
 		.red-font {
 			text-align: left;
 		}
@@ -132,6 +133,10 @@ $secondary-color: #0600ff; //blue
 
 	}
 }
+
+
+//////Bazzi Info Page//////
+
 
 
 

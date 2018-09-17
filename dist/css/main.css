@@ -133,6 +133,17 @@ table {
 	width: 60%;
 }
 
+.artist-icons .artist-text-style .comment {
+	padding-top: 3%;
+	padding-bottom: 2%;
+}
+
+.artist-icons .artist-text-style .user-input {
+	outline: none;
+	margin: 1%;
+	margin-left: 10%;
+}
+
 .artist-icons .artist-text-style a {
 	float: right;
 	padding: 10px;
@@ -1001,7 +1012,6 @@ footer ul {
 
 @media screen and (min-width: 692px) {
 	footer ul {
-		padding-right: 30%;
 		transition: .25s;
 	}
 }

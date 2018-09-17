@@ -1,6 +1,5 @@
 
 // // ====================================================
-// console.log(`Hire Me`)
 
 // setInterval(function() {
 // 	let performersWrapper = document.querySelector(".performer-imgs");

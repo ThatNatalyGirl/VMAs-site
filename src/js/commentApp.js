@@ -3,12 +3,7 @@ const LOCAL_URL_COMMENT = 'http://localhost:1337/comment';
 const API_BASE_COMMENT = 'http://159.89.151.127:1000/comment'
 let commentBtns = document.querySelectorAll('.comment');
 console.log(commentBtns);
-// let commentInput = document.querySelectorAll('input[name="user-comment"]');
 let postBtn = document.querySelectorAll('.send');
-
-//THIS IS THE NEW COMMENT APP
-
-
 
 commentBtns.forEach(function(comment) {
 	comment.addEventListener('click', function() {
@@ -20,7 +15,7 @@ commentBtns.forEach(function(comment) {
 })
 
 
-//Send Message
+
 
 let sendComment = function() {
 	console.log('being clicked')
@@ -30,8 +25,6 @@ let sendComment = function() {
 	let newComment = this.parentElement.querySelector('.user-input').value;
 	console.log(newComment)
 	console.log("send comment for artist: ", this.dataset.artist)
-
-	// console.log("send comment for artist: ", this.getAttribute('data-artist'))
 	axios
 		.post(LOCAL_URL_COMMENT + "/" + this.dataset.artist , {
 			text: newComment

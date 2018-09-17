@@ -111,6 +111,17 @@ $desktop-bp: 960px;
 			
 		}
 
+		.comment {
+			padding-top: 3%;
+			padding-bottom: 2%;
+		}
+
+		.user-input {
+			outline: none;
+			margin: 1%;
+			margin-left: 10%;
+		}
+
 		a {
 			float: right;
 			padding: 10px;
@@ -122,6 +133,7 @@ $desktop-bp: 960px;
 
 		&[disabled] {
 				background: green;
+
 		}
 	}	
 }
