@@ -194,6 +194,10 @@ table {
 		justify-content: space-around;
 		flex-wrap: wrap;
 	}
+	.artist-icons .new-li {
+		display: block;
+		color: red;
+	}
 }
 
 @media only screen and (min-width: 960px) {

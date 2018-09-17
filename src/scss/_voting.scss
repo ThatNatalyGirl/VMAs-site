@@ -111,6 +111,8 @@ $desktop-bp: 960px;
 			
 		}
 
+
+
 		.comment {
 			padding-top: 3%;
 			padding-bottom: 2%;
@@ -184,6 +186,10 @@ $desktop-bp: 960px;
 		flex-direction: row;
 		justify-content: space-around;
 		flex-wrap: wrap;
+		}
+
+		.new-li {
+			display: block;
 		}
 	}
 }

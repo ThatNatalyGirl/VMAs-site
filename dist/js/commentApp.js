@@ -41,16 +41,21 @@ postBtn.forEach(function (btn) {
 var showComments = function showComments(comments) {
 	console.log('showing comments', comments);
 
-	var commentsUL = document.querySelector('ul.comments');
-	commentsUL.innerHTML = '';
+	var commentsULs = document.querySelectorAll('ul.comments');
+	commentsULs.forEach(function (commentsUL) {
+		commentsUL.innerHTML = '';
+	});
 
-	comments.forEach(function (showComment) {
+	comments.forEach(function (showComment, i) {
+		// through the 6 comment arrays
 
 		showComment.forEach(function (p) {
-			var newComment = document.createElement('li');
-			newComment.innerHTML = '' + p.text;
+			// through the comments within them
+			var newComment = document.createElement('p');
+			newComment.classList.add('new-li');
+			newComment.innerHTML = 'Commented: ' + p.text;
 			console.log("New Comment" + newComment);
-			commentsUL.appendChild(newComment);
+			commentsULs[i].appendChild(newComment);
 		});
 	});
 };
