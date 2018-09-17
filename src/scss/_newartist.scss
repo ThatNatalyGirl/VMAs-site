@@ -92,11 +92,13 @@ $secondary-color: #0600ff; //blue
 .category-buttons {
 	@include bp-desktop {
 		display: block;
+		margin: 0px;
 
 		ul {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
+			margin-top: 10px;
 		li {
 				background: blue;
 			}
@@ -121,9 +123,13 @@ $secondary-color: #0600ff; //blue
 .best-new-artist {
 	@include bp-desktop {
 		display: flex;
-		.bazzi {
-		order: 1
+		.red-font {
+			text-align: left;
 		}
+		.lil-uzi, .hayley, .cardi {
+			margin-top: 30px;
+		}
+
 	}
 }
 

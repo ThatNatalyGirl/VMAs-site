@@ -251,11 +251,13 @@ table {
 @media only screen and (min-width: 960px) {
 	.category-buttons {
 		display: block;
+		margin: 0px;
 	}
 	.category-buttons ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+		margin-top: 10px;
 	}
 	.category-buttons ul li {
 		background: blue;
@@ -276,8 +278,11 @@ table {
 	.best-new-artist {
 		display: flex;
 	}
-	.best-new-artist .bazzi {
-		order: 1;
+	.best-new-artist .red-font {
+		text-align: left;
+	}
+	.best-new-artist .lil-uzi, .best-new-artist .hayley, .best-new-artist .cardi {
+		margin-top: 30px;
 	}
 }
 
