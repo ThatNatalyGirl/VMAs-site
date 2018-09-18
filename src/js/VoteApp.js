@@ -1,8 +1,8 @@
 console.log("THIS IS THE Vote App")
 
-let LOCAL_URL = 'http://localhost:1337/vote';
+let LOCAL_URL = 'http://localhost:1338/vote';
 let voteBtns = document.querySelectorAll('.vote');
-const API_BASE = 'http://159.89.151.127:1000/vote';
+const API_BASE = 'http://159.89.151.127:1338/vote';
 
 
 voteBtns.forEach(function(voteBtn, i) {
@@ -10,7 +10,7 @@ voteBtns.forEach(function(voteBtn, i) {
 
   if (this.getAttribute("disabled")) return
     axios
-      .post(LOCAL_URL + "/" + i)
+      .post(API_BASE + "/" + i)
       .then(function (response) {
         let voteTotals = response.data;
       voteBtns.forEach(function(voteBtn, j) {

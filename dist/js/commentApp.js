@@ -2,7 +2,7 @@
 
 console.log("This is the Comment App");
 var LOCAL_URL_COMMENT = 'http://localhost:1337/comment';
-var API_BASE_COMMENT = 'http://159.89.151.127:1000/comment';
+var API_BASE_COMMENT = 'http://159.89.151.127:1337/comment';
 var commentBtns = document.querySelectorAll('.comment');
 console.log(commentBtns);
 var postBtn = document.querySelectorAll('.send');
@@ -24,7 +24,7 @@ var sendComment = function sendComment() {
 	var newComment = this.parentElement.querySelector('.user-input').value;
 	console.log(newComment);
 	console.log("send comment for artist: ", this.dataset.artist);
-	axios.post(LOCAL_URL_COMMENT + "/" + this.dataset.artist, {
+	axios.post(API_BASE_COMMENT + "/" + this.dataset.artist, {
 		text: newComment
 	}).then(function (response) {
 		console.log('server responsed', response);

@@ -12,7 +12,8 @@ app.use(cors());
 
 let votes = [0,0,0,0,0,0]
 let comments = [[],[],[],[],[],[]]
-const port = 1337;
+const port1 = 1337;
+const port2 = 1338
 
 console.log('running index.js'.blue);
 
@@ -49,7 +50,10 @@ app.post('/vote/:artistID', function(req, res) {
 });
 
 
-app.listen(port, function() {
+app.listen(port1, function() {
 	console.log('Example app listening on port 1337!'.red)
+});
+app.listen(port2, function() {
+	console.log('Example app listening on port 1338!'.blue)
 });
 
