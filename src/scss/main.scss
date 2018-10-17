@@ -704,7 +704,7 @@ header{
 		}	
 	}
 
-	.hotties-pics{
+	.women-pics{
 		background: url(../img/photo-9.jpg) top no-repeat;
 		background-size: cover;
 		padding-bottom: 30.2%;
@@ -723,7 +723,12 @@ header{
 		margin-top: -8.5%;
 
 		figcaption{
-			margin-top: 128%;
+			margin-top: 113%;
+			padding-bottom: 40%;
+
+			@media screen and (min-width: 435px){
+				margin-top: 128%;
+			}
 		}
 	}
 

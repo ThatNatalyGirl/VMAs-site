@@ -21,7 +21,7 @@ var performersSpin = setInterval(function () {
 	// performersWrapper.insertBefore(performersWrapper.lastElementChild, performersWrapper.firstElementChild)
 	performersWrapper.appendChild(performersWrapper.firstElementChild);
 	console.log("and next");
-}, 1000);
+}, 3000);
 
 // let allPerformers = Array.prototype.slice.call(document.querySelectorAll(".performer-imgs .performer"));
 // console.log(allPerformers)

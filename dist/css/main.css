@@ -973,14 +973,14 @@ header .open-nav a:hover {
 	margin-top: 91%;
 }
 
-.photo-library-sect .hotties-pics {
+.photo-library-sect .women-pics {
 	background: url(../img/photo-9.jpg) top no-repeat;
 	background-size: cover;
 	padding-bottom: 30.2%;
 	width: 31.61189358372457%;
 }
 
-.photo-library-sect .hotties-pics figcaption {
+.photo-library-sect .women-pics figcaption {
 	margin-top: 58%;
 }
 
@@ -993,7 +993,14 @@ header .open-nav a:hover {
 }
 
 .photo-library-sect .t-swift-pics figcaption {
-	margin-top: 128%;
+	margin-top: 113%;
+	padding-bottom: 40%;
+}
+
+@media screen and (min-width: 435px) {
+	.photo-library-sect .t-swift-pics figcaption {
+		margin-top: 128%;
+	}
 }
 
 .photo-library-sect .logic-pics {
